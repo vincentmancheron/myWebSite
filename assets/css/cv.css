@@ -1,0 +1,178 @@
+/* -CV- */
+/* Expériences */
+#exp .card {
+    background-color: transparent;
+}
+
+#exp button {
+    width: 33%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    font-size: small;
+}
+
+#exp ul {
+    padding: 0.5em 1.5em;
+    margin: 0;
+}
+
+/* Fin Expériences */
+
+/* Trainings */
+#trainings {
+    padding: 0 1em;
+}
+#trainings img {
+    width: 25%;
+}
+
+/* #tr1 :hover {
+    background-color: #FF4568;
+}
+
+#tr2 :hover {
+    background-color: #FF8A2D;
+}
+
+#tr3 :hover {
+    background-color: #01A9DA;
+}
+
+#tr4 :hover {
+    background-color: #3CECA3;
+}
+
+#tr5 :hover {
+    background-color: #FF4568;
+}
+
+#tr6 :hover {
+    background-color: #FF8A2D;
+} */
+
+/* Fin Trainings */
+
+/* Skills */
+#skills h4 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+#skills>div {
+    filter: opacity(95%);
+    width: 100%;
+    margin: 0;
+}
+
+#skills p {
+    font-size: small;
+    font-weight: 1000;
+}
+
+#skills img {
+    width: 1em;
+    height: 1em;
+}
+
+progress {
+    padding: 0.1em;
+}
+
+.bg-html5 {
+    background-color: #DD4D25;
+}
+
+.bg-css3 {
+    background-color: #146EB1;
+}
+
+.bg-js {
+    background-color: #E2C430;
+}
+
+.bg-python {
+    background: linear-gradient(.25turn, #3773A4, #F6D145);
+}
+
+.bg-php {
+    background-color: #7377AD;
+}
+
+.bg-sql {
+    background-color: #2583C9;
+}
+
+.bg-mweb {
+    background-color: #999999;
+}
+
+.bg-mpython {
+    background-color: #4e4d7e;
+}
+
+.bg-msql {
+    background-color: #050505;
+}
+
+.bg-figma {
+    background: linear-gradient(.25turn, #EA4C1D, #F76E5F, #9D56F7, #19B6F6, #0AC97F);
+}
+
+.bg-gimp {
+    background-color: #615A48;
+}
+
+.bg-word {
+    background-color: #295294;
+}
+
+.bg-excel {
+    background-color: #026E39;
+}
+
+.bg-ppt {
+    background-color: #CC4424;
+}
+
+.bg-fr {
+    background: linear-gradient(.25turn, blue, white, red);
+}
+
+.bg-en {
+    background: linear-gradient(blue, red, blue);
+}
+
+.bg-es {
+    background: linear-gradient(red, yellow, red);
+}
+
+/* Fin Skills */
+
+/* Hobbies */
+#hobbies {
+    font-size: medium;
+}
+
+#csgo img:hover {
+    background-color: grey;
+    filter: opacity(85%);
+    border-radius: 5em;
+}
+
+#csgo img {
+    height: 100%;
+    width: 100%;
+}
+
+#hobbies2 img {
+    height: 80%;
+    width: 80%;
+    border-radius: 15em;
+}
+
+/* Fin Hobbies */
+/* -Fin CV- */

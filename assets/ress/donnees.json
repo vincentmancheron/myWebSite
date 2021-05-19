@@ -1,0 +1,77 @@
+{
+    "experiences": [{
+            "title": "Apprenti aide comptable (2019/2020)",
+            "text": "Clinique de l’Europe, Amiens (80) - Service Administratif.",
+            "missions": "<li>Intégration à la base de données comptable de l'ensemble des factures reçues.</li><li>Edition des bons à payer pour les commandes faites par la Pharmacie de la clinique.</li><li>Vérification des rapprochements bancaires.</li>Mais aussi:<li>Soutien auprès des autres collaborateurs dans leurs missions.</li><li>Gestion des archives (cf. Archiviste 2014).</li><li>Tenue de la réception: accueil des patients et redirection des appels téléphoniques.</li>"
+        },
+        {
+            "title": "Employé libre-service pour les stages du BTS (2017-2018)",
+            "text": "Joué Club – Amiens (80), 3 semaines Février 2018.<br>Grande récré – Amiens (80), 2 mois été 2017.",
+            "missions": "<li>« Facing » dans l’ensemble des rayons.</li><li>Réception des marchandises, stockage et alimentation des rayons.</li>"
+        },
+        {
+            "title": "Archiviste (2014)",
+            "text": "Clinique de l’Europe – Amiens (80), 1 mois été 2014.",
+            "missions": "<li>Séparation des dossiers patients décédés et vivants.</li><li>Inscription des dossiers patients décédes sur un listing spécifique.</li><li>Stockage des dossiers patients décédes pour envoi vers un sous-traitant archiviste (Locarchives).</li><li>Optimisation de l'espace occupé par les dossiers patients vivants restant.</li>"
+        },
+        {
+            "title": "Employé libre-service pour des stages d'été (2010-2011)",
+            "text": "Intermarché - Montières, Amiens (80): 6 semaines de stages au total.",
+            "missions": "<li>« Facing » dans l’ensemble des rayons.</li><li>Réception des marchandises, stockage et alimentation des rayons.</li><li>Gestion d’une caisse en heure creuse.</li>"
+        },
+        {
+            "title": "Stage de 3ème auprès du responsable informatique",
+            "text": "Collège Sainte-Famille 'Gare' - Amiens (80) : 1 semaine.",
+            "missions": "<li>Installation de logiciels.</li><li>Maintenance simple d’ordinateurs.</li>"
+        },
+        {
+            "title": "Bénévolat",
+            "text": "2 mois d’aide au sein d’une association pour personnes atteintes d’handicap mental.<br>1 mois de bénévolat en tant que technicien dans une association de voile.",
+            "missions": ""
+        }
+    ],
+
+    "trainings": [{
+            "title": "License professionnelle Comptabilité/Paye (2019-2020)",
+            "imgSrc": "../assets/img/cnam.png",
+            "imgAlt": "CNAM Picardie",
+            "description": "non validée. Alternance au sein du service administratif de la Clinique de l’Europe.",
+            "link": "https://www.cnam-hauts-de-france.fr/"
+        },
+        {
+            "title": "BTS Management des unités commerciales (2016-2018)",
+            "imgSrc": "../assets/img/sacre_coeur.jpg",
+            "imgAlt": "Lycée du Sacré-Coeur",
+            "description": "au Lycée du Sacré-Cœur d’Amiens.",
+            "link": "https://site.sacrecoeur-amiens.org/"
+        },
+        {
+            "title": "Essai d’intégration de l’armée de terre et de l’armée de l’air (2015-2016)",
+            "imgSrc": "../assets/img/Logo_of_the_French_Armed_Forces.svg",
+            "imgAlt": "Ministère de la défense",
+            "description": "Essai d’intégration de l’armée de terre et de l’armée de l’air.",
+            "link": "https://www.defense.gouv.fr/"
+        },
+        {
+            "title": "1ère année cycle préparatoire intégrée (2014-2015)",
+            "imgSrc": "../assets/img/escom.svg",
+            "imgAlt": "Classes préparatoires ESCOM",
+            "description": "ESCOM, école supérieure de chimie organique et minérale.",
+            "link": "https://www.escom.fr/"
+        },
+        {
+            "title": "PCSI Sup (2013-2014)",
+            "imgSrc": "../assets/img/Chartreux.jpg",
+            "imgAlt": "Classes préparatoires CPE",
+            "description": "au lycée des chartreux Lyon (Intégration CPE Lyon). Membre du BDE de l’école.",
+            "link": "https://www.prepa.cpe.fr/"
+        },
+        {
+            "title": "Seconde-Terminale S (2010-2013)",
+            "imgSrc": "../assets/img/sacre_coeur.jpg",
+            "imgAlt": "Lycée du Sacré-Coeur",
+            "description": "au Lycée du Sacré-Cœur Amiens. Spécialité Mathématiques. BAC obtenu avec mention BIEN.",
+            "link": "https://site.sacrecoeur-amiens.org/"
+        }
+    ]
+}
