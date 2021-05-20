@@ -68,6 +68,7 @@ figure img {
 .h-10 {
     height: 10%;
 }
+
 /* Footer */
 footer {
     background-image: url(/assets/img/grunge.jpg);
@@ -138,12 +139,6 @@ footer {
 
 /* Fin Navbar */
 
-/* Carroussel */
-#carouselExampleControls img {
-    height: 50vh;
-}
-/* Fin Carroussel */
-
 /* Portfolios */
 #portfolios figure :hover {
     opacity: 85%;
@@ -175,9 +170,18 @@ option {
 }
 
 /* Fin Contact */
+/* Footer */
+#footer a {
+    color: grey;
+}
+
+#footer ul {
+    list-style: none;
+}
 /* --Fin Home+CV-- */
 
 /* -Home- */
+/* Header */
 #home {
     font-family: 'Zen Dots', sans-serif;
     background-image: url(/assets/img/grunge.jpg);
@@ -191,5 +195,13 @@ option {
 #moncv {
     color: white;
 }
+
+/* Fin Header */
+/* Carroussel */
+#carouselExampleControls img {
+    height: 50vh;
+}
+
+/* Fin Carroussel */
 
 /* -Fin Home- */

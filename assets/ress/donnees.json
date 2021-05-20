@@ -73,5 +73,126 @@
             "description": "au Lycée du Sacré-Cœur Amiens. Spécialité Mathématiques. BAC obtenu avec mention BIEN.",
             "link": "https://site.sacrecoeur-amiens.org/"
         }
+    ],
+
+    "skills": [{
+        "name": "HTML5",
+        "imgSrc": "/assets/img/html5.png",
+        "imgAlt": "Logo HTML5",
+        "value": "50",
+        "mention": "50%"
+    },
+    {
+        "name": "CSS3",
+        "imgSrc": "/assets/img/css3.png",
+        "imgAlt": "Logo CSS3",
+        "value": "30",
+        "mention": "30%"
+    },
+    {
+        "name": "JavaScript",
+        "imgSrc": "/assets/img/js.png",
+        "imgAlt": "Logo JS",
+        "value": "20",
+        "mention": "20%"
+    },
+    {
+        "name": "Python",
+        "imgSrc": "/assets/img/python.png",
+        "imgAlt": "Logo Python",
+        "value": "25",
+        "mention": "25%"
+    },
+    {
+        "name": "pHp",
+        "imgSrc": "/assets/img/php.png",
+        "imgAlt": "Logo pHp",
+        "value": "0",
+        "mention": "0%"
+    },
+    {
+        "name": "SQL",
+        "imgSrc": "/assets/img/sql.png",
+        "imgAlt": "Logo SQL",
+        "value": "0",
+        "mention": "0%"
+    },
+    {
+        "name": "Figma",
+        "imgSrc": "/assets/img/figma.png",
+        "imgAlt": "Logo Figma",
+        "value": "25",
+        "mention": "En progression"
+    },
+    {
+        "name": "Gimp",
+        "imgSrc": "/assets/img/gimp.png",
+        "imgAlt": "Logo Gimp",
+        "value": "10",
+        "mention": "Débutant"
+    },
+    {
+        "name": "Word",
+        "imgSrc": "/assets/img/word.png",
+        "imgAlt": "Logo Word",
+        "value": "60",
+        "mention": "Bonne maîtrise"
+    },
+    {
+        "name": "Excel",
+        "imgSrc": "/assets/img/excel.png",
+        "imgAlt": "Logo Excel",
+        "value": "15",
+        "mention": "A approfondir"
+    },
+    {
+        "name": "Powerpoint",
+        "imgSrc": "/assets/img/powerpoint.png",
+        "imgAlt": "Logo Powerpoint",
+        "value": "70",
+        "mention": "Bonne maîtrise"
+    },
+    {
+        "name": "Web",
+        "imgSrc": "/assets/img/html5.png",
+        "imgAlt": "Logo HTML5",
+        "value": "32",
+        "mention": "59/184 leçons apprises"
+    },
+    {
+        "name": "Python",
+        "imgSrc": "/assets/img/python.png",
+        "imgAlt": "Logo Python",
+        "value": "13",
+        "mention": "16/116 leçons apprises"
+    },
+    {
+        "name": "SQL (pas de certificat)",
+        "imgSrc": "/assets/img/sql.png",
+        "imgAlt": "Logo SQL",
+        "value": "0",
+        "mention": "0%"
+    },
+    {
+        "name": "Français",
+        "imgSrc": "",
+        "imgAlt": "",
+        "value": "100",
+        "mention": "Maternelle"
+    },
+    {
+        "name": "Anglais",
+        "imgSrc": "",
+        "imgAlt": "",
+        "value": "60",
+        "mention": "B2"
+    },
+    {
+        "name": "Espagnol",
+        "imgSrc": "",
+        "imgAlt": "",
+        "value": "20",
+        "mention": "A2"
+    }
     ]
 }

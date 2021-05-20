@@ -1,8 +1,11 @@
-// Experiences et Formations:
+// Experiences, Formations et Skills:
 const expMainTimeline = document.querySelector('#exp .main-timeline');
 const expTimeline = document.querySelector('#exp .timeline');
 const trainMainTimeline = document.querySelector('#trainings .main-timeline');
 const trainTimeline = document.querySelector('#trainings .timeline');
+const idProgress = document.querySelectorAll('#skills .itemSkill>div:first-child');
+const progressBar = document.querySelectorAll('#skills .progress-bar');
+const mentionProgress = document.querySelectorAll('#skills .itemSkill>div:last-child');
 
 fetch('../assets/ress/donnees.json')
     .then((response) => response.json())
@@ -46,8 +49,17 @@ fetch('../assets/ress/donnees.json')
             trainDesc[i].innerHTML = trainDesc[i].innerHTML + trainings[i].description;
             trainLink[i].href = trainings[i].link;
         }
+        // Injections valeurs Skills:
+        const skills = data.skills;
+        for (let i = 0; i < skills.length; i++) {
+            idProgress[i].innerHTML = `<img class="mr-2" src="${skills[i].imgSrc}" alt="${skills[i].imgAlt}">`;
+            idProgress[i].innerHTML = `${idProgress[i].innerHTML}<p>${skills[i].name}:</p>`;
+            // progressBar[i].setAttribute('style',`width=${skills[i].value}%`);
+            // progressBar[i].setAttribute('aria-valuenow', skills[i].value);
+            mentionProgress[i].innerHTML = `<p>${skills[i].mention}</p>`;
+        }
     })
     .catch((err) => {
         alert("Error JSON")
     })
-// Fin Experiences et Formations
+// Fin Experiences, Formations et Skills
