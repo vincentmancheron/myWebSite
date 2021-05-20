@@ -9,18 +9,16 @@ body {
     font-size: larger;
     background-image: url(../img/matrix.jpg);
     filter: saturate(150%);
-    color: whitesmoke;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    background-color: black;
     opacity: 90%;
 }
 
 section {
-    border: ridge .5em green;
+    /* border: ridge .5em green; */
     padding: 2em 0;
     background-image: url(/assets/img/oldBlack.jpg);
     background-size: cover;
@@ -163,27 +161,20 @@ option {
 
 /* Fin Contact */
 /* Faux Footer */
-#footer a {
-    color: grey;
-}
-
 #footer ul {
     list-style: none;
 }
 
-/* Fin Faux Footer */
-/* Footer */
-footer {
-    background-color: black;
+#footer h5 {
+    font-weight: 800;
 }
 
-/* Fin Footer */
+/* Fin Faux Footer */
 /* --Fin Home+CV-- */
 
 /* -Home- */
 /* Header */
 #home {
-    background-color: black;
     font-family: 'Zen Dots', sans-serif;
 }
 
@@ -203,5 +194,4 @@ footer {
 }
 
 /* Fin Carroussel */
-
 /* -Fin Home- */

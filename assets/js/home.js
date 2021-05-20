@@ -13,14 +13,14 @@ fetch('../assets/json/carousel.json')
         }
         // Injections des données carousel:
         const carouselCaption = document.querySelectorAll('.carousel-caption');
+        const carouselLink = document.querySelectorAll('.carousel-item a');
+        const carouselImg = document.querySelectorAll('.carousel-item img');
         for (let i = 0; i < carousel.length; i++) {
-            carouselTitle[i].innerHTML = carouseleriences[i].title;
-            carouselText[i].innerHTML = carouseleriences[i].text + carouselText[i].innerHTML
-            carouselMissions[i].innerHTML = carouseleriences[i].missions;
-            carouselBtn[i].dataset.target = `#collapse${i+1}`;
-            // carouselBtn[i].setAttribute('aria-controls', document.carouselBtn.getAttribute('aria-controls')) = `#collapse${i+1}`;
-            carouselCollapse[i].id = `collapse${i+1}`;
-            // carouselCollapse[i].ariaset.labelledby = `heading${i+1}`;
+            carouselCaption[i].innerHTML = `<h5>${carousel[i].title}</h5>`;
+            carouselCaption[i].innerHTML = carouselCaption[i].innerHTML + `<p>${carousel[i].subTitle}</p>`;
+            carouselLink[i].href = carousel[i].link;
+            carouselImg[i].src = carousel[i].imgSrc;
+            carouselImg[i].alt = carousel[i].imgAlt;
         }
     })
     .catch((err) => {
