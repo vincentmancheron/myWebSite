@@ -30,6 +30,10 @@
     width: 25%;
 }
 
+#trainings .main-timeline .timeline-content{
+    color: initial;
+}
+
 /* #tr1 :hover {
     background-color: #FF4568;
 }

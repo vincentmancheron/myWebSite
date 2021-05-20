@@ -69,19 +69,11 @@ figure img {
     height: 10%;
 }
 
-/* Footer */
-footer {
-    background-image: url(/assets/img/grunge.jpg);
-    background-size: cover;
-}
-
-/* Fin Footer */
 /* ---Fin Généralités--- */
 
 /* -Index- */
 #index1 {
     height: 100vh;
-    background-image: url(/assets/img/oldBlack.jpg);
     opacity: 95%;
 }
 
@@ -170,7 +162,7 @@ option {
 }
 
 /* Fin Contact */
-/* Footer */
+/* Faux Footer */
 #footer a {
     color: grey;
 }
@@ -178,13 +170,21 @@ option {
 #footer ul {
     list-style: none;
 }
+
+/* Fin Faux Footer */
+/* Footer */
+footer {
+    background-color: black;
+}
+
+/* Fin Footer */
 /* --Fin Home+CV-- */
 
 /* -Home- */
 /* Header */
 #home {
+    background-color: black;
     font-family: 'Zen Dots', sans-serif;
-    background-image: url(/assets/img/grunge.jpg);
 }
 
 #fleche-bas {

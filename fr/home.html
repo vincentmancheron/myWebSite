@@ -32,7 +32,8 @@
 -Faire les CGC.
 -Faire les offers.
 -Intégrer un popover pour la map dans la bottomNavBar 
--Clean le code, améliorer le responsive (em ou % notamment pour les imgs.)-->
+-Clean le code, améliorer le responsive (em ou % notamment pour les imgs.)
+-Faire une barre vertical de navigation dans la page et nav bar devient global (accueil, cv, veille, blog)-->
 
 <!-- Bugs:
 -Mettre les images en opacity 100%.
@@ -105,6 +106,18 @@
                         <a class="nav-link disabled" href=>Blog</a>
                     </li>
                 </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end pr-2 mr-5" id="navbarNav">
+                <div class="nav-item active">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Télécharger
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/assets/ress/CV_Vincent_Mancheron.odt" download>CV Papier</a>
+                        <a class="dropdown-item" href="#">Lettre de motivation</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- Fin Top Navbar -->
@@ -565,44 +578,44 @@
         </section>
         <!-- Fin Contact -->
 
-            <!-- Faux Footer -->
-            <div id="footer" class="row justify-content-around">
-                <ul>
-                    Accueil
-                    <li>
-                        <a href="#offers">Offres</a>    
-                    </li>
-                    <li>
-                        <a href="#portfolios">Portfolios</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="">Blog</a>
-                    </li>
-                </ul>
-                <ul>
-                    CV
-                    <li>
-                        <a href="cv.html#exp">Expériences</a>
-                    </li>
-                    <li>
-                        <a href="cv.html#trainings">Formations</a>
-                    </li>
-                    <li>
-                        <a href="cv.html#skills">Compétences</a>
-                    </li>
-                    <li>
-                        <a href="cv.html#hobbies">Loisirs</a>
-                    </li>
-                    <li>
-                        <a href="cv.html#portfolios">Portfolios</a>
-                    </li>
-                    <li>
-                        <a href="cv.html#contact">Contact</a>
-                    </li>
-                </ul>
+        <!-- Faux Footer -->
+        <div id="footer" class="row justify-content-around">
+            <ul>
+                Accueil
+                <li>
+                    <a href="#offers">Offres</a>    
+                </li>
+                <li>
+                    <a href="#portfolios">Portfolios</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+            </ul>
+            <ul>
+                CV
+                <li>
+                    <a href="cv.html#exp">Expériences</a>
+                </li>
+                <li>
+                    <a href="cv.html#trainings">Formations</a>
+                </li>
+                <li>
+                    <a href="cv.html#skills">Compétences</a>
+                </li>
+                <li>
+                    <a href="cv.html#hobbies">Loisirs</a>
+                </li>
+                <li>
+                    <a href="cv.html#portfolios">Portfolios</a>
+                </li>
+                <li>
+                    <a href="cv.html#contact">Contact</a>
+                </li>
+            </ul>
         </div>
         <!-- Fin Faux Footer -->
     

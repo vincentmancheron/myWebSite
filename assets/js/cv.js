@@ -7,11 +7,11 @@ const idProgress = document.querySelectorAll('#skills .itemSkill>div:first-child
 const progressBar = document.querySelectorAll('#skills .progress-bar');
 const mentionProgress = document.querySelectorAll('#skills .itemSkill>div:last-child');
 
-fetch('../assets/ress/donnees.json')
+fetch('../assets/json/cv.json')
     .then((response) => response.json())
     .then((data) => {
         // Clonage expériences:
-        const experiences = data.experiences
+        const experiences = data.experiences;
         for (let i = 1; i < experiences.length; i++) {
             let clone = expTimeline.cloneNode(true);
             expMainTimeline.appendChild(clone);
@@ -21,10 +21,10 @@ fetch('../assets/ress/donnees.json')
         const expText = document.querySelectorAll('#exp .description');
         const expMissions = document.querySelectorAll('#exp .card-body');
         const expBtn = document.querySelectorAll('#exp .btn');
-        const expCollapse = document.querySelectorAll('#exp .collapse')
+        const expCollapse = document.querySelectorAll('#exp .collapse');
         for (let i = 0; i < experiences.length; i++) {
             expTitle[i].innerHTML = experiences[i].title;
-            expText[i].innerHTML = experiences[i].text + expText[i].innerHTML
+            expText[i].innerHTML = experiences[i].text + expText[i].innerHTML;
             expMissions[i].innerHTML = experiences[i].missions;
             expBtn[i].dataset.target = `#collapse${i+1}`;
             // expBtn[i].setAttribute('aria-controls', document.expBtn.getAttribute('aria-controls')) = `#collapse${i+1}`;
@@ -32,7 +32,7 @@ fetch('../assets/ress/donnees.json')
             // expCollapse[i].ariaset.labelledby = `heading${i+1}`;
         }
         // Clonage Trainings:
-        const trainings = data.trainings
+        const trainings = data.trainings;
         for (let i = 1; i < trainings.length; i++) {
             let clone = trainTimeline.cloneNode(true);
             trainMainTimeline.appendChild(clone);
@@ -60,6 +60,6 @@ fetch('../assets/ress/donnees.json')
         }
     })
     .catch((err) => {
-        alert("Error JSON")
+        alert("Error JSON");
     })
 // Fin Experiences, Formations et Skills
