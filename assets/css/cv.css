@@ -78,8 +78,8 @@
     height: 1em;
 }
 
-progress {
-    padding: 0.1em;
+.progress {
+    padding: 0;
 }
 
 .bg-html5 {

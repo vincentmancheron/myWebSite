@@ -17,10 +17,16 @@ fetch('../assets/ress/donnees.json')
         const expTitle = document.querySelectorAll('#exp .title');
         const expText = document.querySelectorAll('#exp .description');
         const expMissions = document.querySelectorAll('#exp .card-body');
+        const expBtn = document.querySelectorAll('#exp .btn');
+        const expCollapse = document.querySelectorAll('#exp .collapse')
         for (let i = 0; i < experiences.length; i++) {
             expTitle[i].innerHTML = experiences[i].title;
             expText[i].innerHTML = experiences[i].text + expText[i].innerHTML
             expMissions[i].innerHTML = experiences[i].missions;
+            expBtn[i].dataset.target = `#collapse${i+1}`;
+            // expBtn[i].setAttribute('aria-controls', document.expBtn.getAttribute('aria-controls')) = `#collapse${i+1}`;
+            expCollapse[i].id = `collapse${i+1}`;
+            // expCollapse[i].ariaset.labelledby = `heading${i+1}`;
         }
         // Clonage Trainings:
         const trainings = data.trainings
