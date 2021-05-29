@@ -1,6 +1,37 @@
 // Experiences, Formations et Skills:
+
+const cloneExp = () => {
+    let clone = 
+    `<div class="timeline">
+        <span class="icon fa fa-globe"></span>
+        <a class="timeline-content">
+        <h3 class="title"></h3>
+        <p class="description">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="heading1">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button"
+                                data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                                aria-controls="collapse1">
+                                Missions réalisés
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1"
+                        data-parent="#accordionExample">
+                        <ul class="card-body"></ul>
+                    </div>
+                </div>
+            </div>
+        </p>
+        </a>
+    </div>`;
+    return clone;
+}
+
+
 const expMainTimeline = document.querySelector('#exp .main-timeline');
-const expTimeline = document.querySelector('#exp .timeline');
 const trainMainTimeline = document.querySelector('#trainings .main-timeline');
 const trainTimeline = document.querySelector('#trainings .timeline');
 const idProgress = document.querySelectorAll('#skills .itemSkill>div:first-child');
@@ -12,9 +43,8 @@ fetch('../assets/json/cv.json')
     .then((data) => {
         // Clonage expériences:
         const experiences = data.experiences;
-        for (let i = 1; i < experiences.length; i++) {
-            let clone = expTimeline.cloneNode(true);
-            expMainTimeline.appendChild(clone);
+        for (let i = 0; i < experiences.length; i++) {
+            expMainTimeline.innerHTML += cloneExp();
         }
         // Injections des données expériences:
         const expTitle = document.querySelectorAll('#exp .title');
