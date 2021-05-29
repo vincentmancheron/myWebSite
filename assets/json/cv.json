@@ -175,22 +175,22 @@
     },
     {
         "name": "Français",
-        "imgSrc": "",
-        "imgAlt": "",
+        "imgSrc": "/assets/img/fr.png",
+        "imgAlt": "Drapeau français",
         "value": "100",
         "mention": "Maternelle"
     },
     {
         "name": "Anglais",
-        "imgSrc": "",
-        "imgAlt": "",
+        "imgSrc": "/assets/img/en.png",
+        "imgAlt": "Drapeau anglais",
         "value": "60",
         "mention": "B2"
     },
     {
         "name": "Espagnol",
-        "imgSrc": "",
-        "imgAlt": "",
+        "imgSrc": "/assets/img/espagnol.png",
+        "imgAlt": "Drapeau espagnol",
         "value": "20",
         "mention": "A2"
     }
