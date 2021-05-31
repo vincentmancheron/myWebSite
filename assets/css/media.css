@@ -28,6 +28,9 @@
 
 /* md */
 @media (min-width: 768px) {
+    body {
+        font-size: 1.1em;
+    }
     #manu a {
         padding: 0 1em 0 0;
     }
