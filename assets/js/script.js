@@ -6,9 +6,9 @@ const section = document.querySelectorAll('section');
 const fauxFooter = document.querySelector('#footer');
 const footer = document.querySelector('footer');
 
-colorMode = () => {
-    var lightMode = JSON.parse(localStorage.getItem('lightMode'));
-    if (lightMode) {
+const colorMod = () => {
+    var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
+    if (lSColorMod) {
         body.style.color = "black";
         // body.borderColor = "black";
         headerHome.style.backgroundColor = 'white';
@@ -39,15 +39,17 @@ colorMode = () => {
     }
 }
 
-colorMode();
-
-document.getElementById('colorMode').onclick = () => {
-    var lightMode = JSON.parse(localStorage.getItem('lightMode'));
-    if (!lightMode) {
-        localStorage.setItem('lightMode', 'true'); 
+const changeColorMod = () => {
+    var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
+    if (!lSColorMod) {
+        localStorage.setItem('colorMod', 'true'); 
     } else {
-        localStorage.setItem('lightMode', 'false');
+        localStorage.setItem('colorMod', 'false');
     }
-    colorMode();
+    colorMod();
 }
+
+colorMod();
+
+document.getElementById('colorMod').onclick = () => changeColorMod();
 // Fin Color Mode
