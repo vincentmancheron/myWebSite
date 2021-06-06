@@ -38,7 +38,7 @@ const idProgress = document.querySelectorAll('#skills .itemSkill>div:first-child
 const progressBar = document.querySelectorAll('#skills .progress-bar');
 const mentionProgress = document.querySelectorAll('#skills .itemSkill>div:last-child');
 
-fetch('../assets/json/cv.json')
+fetch('/assets/json/cv.json')
     .then((response) => response.json())
     .then((data) => {
         // Clonage expériences:
@@ -90,6 +90,6 @@ fetch('../assets/json/cv.json')
         }
     })
     .catch((err) => {
-        alert("Error JSON");
+        alert("Error JSON CV");
     })
 // Fin Experiences, Formations et Skills

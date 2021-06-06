@@ -69,42 +69,6 @@ figure img {
 
 /* ---Fin Généralités--- */
 
-/* -Index- */
-#index1 {
-    height: 100vh;
-    opacity: 95%;
-}
-
-#index1 img {
-    position: absolute;
-    left: 77vh;
-    height: 50vh;
-    width: 50vh;
-    border-radius: 25em;
-}
-
-#index2 {
-    border-radius: 50em;
-}
-
-#index2>a:first-child {
-    background-image: url(/assets/img/fr.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50em 0 0 50em;
-    opacity: 70%;
-}
-
-#index2>a:nth-child(2) {
-    background-image: url(/assets/img/en.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 50em 50em 0;
-    opacity: 70%;
-}
-
-/* -Fin Index- */
-
 /* --Home+CV-- */
 /* Navbar */
 #btn-cv {

@@ -2,7 +2,7 @@
 const innerCarousel = document.querySelector('.carousel-inner');
 const itemCarousel = document.querySelector('.carousel-item');
 
-fetch('../assets/json/carousel.json')
+fetch('assets/json/carousel.json')
     .then((response) => response.json())
     .then((data) => {
         // Clonage expériences:
@@ -24,6 +24,6 @@ fetch('../assets/json/carousel.json')
         }
     })
     .catch((err) => {
-        alert("Error JSON")
+        alert("Error JSON carousel")
     })
 // Fin Carousel
