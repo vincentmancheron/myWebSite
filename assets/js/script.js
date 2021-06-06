@@ -83,7 +83,7 @@ const colorMod = () => {
     }
 }
 
-const setColorMod = () => {
+const changeColorMod = () => {
     var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
     if (!lSColorMod) {
         localStorage.setItem('colorMod', 'true'); 
@@ -93,7 +93,7 @@ const setColorMod = () => {
     colorMod();
 }
 
-setColorMod();
+colorMod();
 
-document.getElementById('colorMod').onclick = () => setColorMod();
+document.getElementById('colorMod').onclick = () => changeColorMod();
 // Fin Color Mode
