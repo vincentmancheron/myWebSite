@@ -71,8 +71,8 @@ figure img {
 
 /* --Home+CV-- */
 /* Navbar */
-#btn-cv {
-    width: 7.5em;
+#flag {
+    width: 3em;
 }
 
 #stickybot {
@@ -147,8 +147,9 @@ option {
     border-radius: 10em;
 }
 
-#moncv {
-    color: white;
+#fleche-bas img {
+    width: 2em;
+    height: 2em;
 }
 
 /* Fin Header */
