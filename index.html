@@ -13,8 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Vincent Mancheron - Développeur Web Junior - Site personnel</title>
-    <meta name="description" content=
-    "Site Web de Vincent Mancheron, Développeur Web Junior en Formation à La Manu Amiens.
+    <meta name="description" content="Site Web de Vincent Mancheron, Développeur Web Junior en Formation à La Manu Amiens.
     Vous y retrouverez ses Offres, son Portfolio, son CV ainsi que son Blog.">
 </head>
 
@@ -107,10 +106,21 @@
                             <a class="dropdown-item" href="#">Lettre de motivation</a>
                         </div>
                     </div>
-                    <div class="nav-item disabled mx-lg-2 my-lg-0 py-2">
-                        <button class="btn btn-primary">
-                            <img id="flag" src="assets/img/en.png" alt="English version">
+                    <div id="language" class="dropdown nav-item mx-lg-2 my-lg-0 py-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="flag" class="flag py-2" src="assets/img/en.png" alt="English version">
                         </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul>
+                                <li>
+                                    <img id="en" class="flag flagSelect py-2" src="assets/img/en.png" alt="English version">
+                                </li>
+                                <li>
+                                    <img id="fr" class="flag flagSelect py-2" src="assets/img/fr.png" alt="English version">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="nav-item active mx-lg-2 my-lg-0 py-2">
                         <button class="btn btn-primary" id="colorMod">Light Mode</button>
@@ -161,7 +171,7 @@
                 </div>
             </section>
             <!-- Fin Offres -->
-            
+
             <!-- Portfolios -->
             <section id="portfolios" class="col">
                 <h3>Portfolios</h3>
@@ -169,14 +179,16 @@
                     <div class="col-12 col-md-6 offset-md-3">
                         <figure id="manu" class="row border align-items-center">
                             <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
-                            <a id="p0" class="col-12 col-md-4" href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
+                            <a id="p0" class="col-12 col-md-4"
+                                href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
                                 <img src="assets/img/logo_La_Manu.png" alt="La Manu">
                             </a>
                             <p class="col-12 col-md-8 m-0">
                                 J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
                                 Formations.<br>
                                 L'ensemble de mon portfolio se résume aux projets réalisés en son sein.<br>
-                                J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que vous
+                                J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que
+                                vous
                                 puissiez constater ma progression !
                             </p>
                         </figure>
@@ -221,11 +233,11 @@
                         <div class="row justify-content-center">
                             <p class="border col-8 col-lg-4">
                                 <a href="tel:+3323232425">Tel:<br>
-                                07.88.22.87.29<br><br>
-                                <a href="mailto:vmancheron@yahoo.fr">Mail:<br>
-                                vmancheron@yahoo.fr</a><br><br>
-                                <a href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">Ville:<br>
-                                Amiens, France</a>
+                                    07.88.22.87.29<br><br>
+                                    <a href="mailto:vmancheron@yahoo.fr">Mail:<br>
+                                        vmancheron@yahoo.fr</a><br><br>
+                                    <a href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">Ville:<br>
+                                        Amiens, France</a>
                             </p>
                         </div>
                         <div class="row justify-content-center mt-5 mb-0">
@@ -308,7 +320,8 @@
                                     <option value="Botswana">Botswana</option>
                                     <option value="Bouvet Island">Bouvet Island</option>
                                     <option value="Brazil">Brazil</option>
-                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory
+                                    </option>
                                     <option value="Brunei Darussalam">Brunei Darussalam</option>
                                     <option value="Bulgaria">Bulgaria</option>
                                     <option value="Burkina Faso">Burkina Faso</option>
@@ -327,7 +340,8 @@
                                     <option value="Colombia">Colombia</option>
                                     <option value="Comoros">Comoros</option>
                                     <option value="Congo">Congo</option>
-                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of
+                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic
+                                        of
                                         The</option>
                                     <option value="Cook Islands">Cook Islands</option>
                                     <option value="Costa Rica">Costa Rica</option>
@@ -424,7 +438,8 @@
                                     <option value="Mauritius">Mauritius</option>
                                     <option value="Mayotte">Mayotte</option>
                                     <option value="Mexico">Mexico</option>
-                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of
+                                    </option>
                                     <option value="Moldova, Republic of">Moldova, Republic of</option>
                                     <option value="Monaco">Monaco</option>
                                     <option value="Mongolia">Mongolia</option>
@@ -450,7 +465,8 @@
                                     <option value="Oman">Oman</option>
                                     <option value="Pakistan">Pakistan</option>
                                     <option value="Palau">Palau</option>
-                                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied
+                                    </option>
                                     <option value="Panama">Panama</option>
                                     <option value="Papua New Guinea">Papua New Guinea</option>
                                     <option value="Paraguay">Paraguay</option>
@@ -485,7 +501,8 @@
                                     <option value="Solomon Islands">Solomon Islands</option>
                                     <option value="Somalia">Somalia</option>
                                     <option value="South Africa">South Africa</option>
-                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The
+                                        South
                                         Sandwich Islands</option>
                                     <option value="Spain">Spain</option>
                                     <option value="Sri Lanka">Sri Lanka</option>
@@ -561,7 +578,7 @@
                 <ul>
                     <h5>Accueil</h5>
                     <li>
-                        <a href="#offers">Offres</a>    
+                        <a href="#offers">Offres</a>
                     </li>
                     <li>
                         <a href="#portfolios">Portfolios</a>
@@ -596,7 +613,7 @@
                 </ul>
             </div>
             <!-- Fin Faux Footer -->
-        
+
             <!-- Bottom NavBar -->
             <nav id="stickybot" class="col navbar navbar-expand-lg py-0">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -652,7 +669,9 @@
     <!-- Script Java -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/home.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>

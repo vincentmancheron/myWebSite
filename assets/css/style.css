@@ -71,7 +71,11 @@ figure img {
 
 /* --Home+CV-- */
 /* Navbar */
-#flag {
+#language ul {
+    list-style: none;
+}
+
+.flag {
     width: 3em;
 }
 

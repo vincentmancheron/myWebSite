@@ -42,6 +42,14 @@
 // })
 // // Fin Navigation
 
+// Bouton langue:
+    document.querySelectorAll('.flagSelect').forEach(element => {
+        element.onclick = () => {
+            document.querySelector('#flag').setAttribute('src',element.src);
+        }
+    })
+// Fin Bouton langue
+
 // Color Mode:
 const body = document.querySelector('body');
 const headerHome = document.querySelector ('header');
