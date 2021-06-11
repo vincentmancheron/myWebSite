@@ -30,10 +30,25 @@ const cloneExp = () => {
     return clone;
 }
 
+const cloneTrain = () => {
+    let clone = 
+    `<div class="timeline">
+        <a class="timeline-content" target="_blank">
+            <div class="timeline-icon">
+                <i class="fa fa-globe"></i>
+            </div>
+            <h3 class="title"></h3>
+            <p class="description d-flex">
+                <img class="mx-3">
+            </p>
+        </a>
+    </div>`;
+    return clone;
+}
+
 
 const expMainTimeline = document.querySelector('#exp .main-timeline');
 const trainMainTimeline = document.querySelector('#trainings .main-timeline');
-const trainTimeline = document.querySelector('#trainings .timeline');
 const idProgress = document.querySelectorAll('#skills .itemSkill>div:first-child');
 const progressBar = document.querySelectorAll('#skills .progress-bar');
 const mentionProgress = document.querySelectorAll('#skills .itemSkill>div:last-child');
@@ -63,9 +78,8 @@ fetch('/assets/json/cv.json')
         }
         // Clonage Trainings:
         const trainings = data.trainings;
-        for (let i = 1; i < trainings.length; i++) {
-            let clone = trainTimeline.cloneNode(true);
-            trainMainTimeline.appendChild(clone);
+        for (let i = 0; i < trainings.length; i++) {
+            trainMainTimeline.innerHTML += cloneTrain();
         }
         // Injections des données trainings:
         const trainTitle = document.querySelectorAll('#trainings .title');
