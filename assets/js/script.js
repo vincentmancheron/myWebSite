@@ -105,15 +105,3 @@ colorMod();
 
 document.getElementById('colorMod').onclick = () => changeColorMod();
 // Fin Color Mode
-
-// Liste Pays Formulaire:
-fetch('/assets/json/states.json')
-    .then(response => response.json())
-    .then(data => {
-        const states = data.states;
-        for (i=0; i<states.length; i++) {
-            document.querySelector('#inputState').innerHTML += `<option value="${states[i]}">${states[i]}</option>`
-        }
-    })
-    .catch(error => alert("Erreur JSON States"));
-// Fin Liste Pays Formulaire

@@ -1,6 +1,8 @@
 <?php
     // Formulaire:
-    $error = [];
+    $error = ['empty','regMatch'];
+    $error['empty'] = [];
+    $error['regMatch'] = [];
 
     // Vérification Empty:
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -37,7 +39,7 @@
         if (!empty($_POST['inputState'])) {
             $state = $_POST['inputState'];
         } else {
-            $error['empty']['state'] = 'Le champ France est vide.';
+            $error['empty']['state'] = 'Le champ Pays est vide.';
         }
     
         if (!empty($_POST['inputZip'])) {
@@ -65,7 +67,14 @@
     $regPhoneNumber = '(0|\+33)[1-9]( *[0-9]{2}){4}';
     $regEmail = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}';
 
-
+    // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //     if (!empty($_POST['lastname'])) {
+    //         preg_match($regAlpha, $lastname, $answer, PREG_OFFSET_CAPTURE);
+    //         if ($answer) {
+    //             $error['regMatch']['lastname'] = false;
+    //         }
+    //     }
+    // }
     // Fin Formulaire
 ?>
 
@@ -229,7 +238,8 @@
         <!-- Offres -->
         <section id="offers" class="col">
             <h3>Offres</h3>
-            <h4 class="error text-center">Section en voie de construction, mon activité personnelle n'existe pas encore, étant actuellement en formation.</h4>
+            <h4 class="error text-center">Section en voie de construction, mon activité personnelle n'existe pas encore,
+                étant actuellement en formation.</h4>
             <div class="row justify-content-around">
                 <div class="col-12 col-md-5 border">
                     <h4>Création d’un site Web:</h4>
@@ -256,8 +266,8 @@
                 <div class="col-12 col-lg-10 col-xl-8">
                     <figure id="manu" class="row border align-items-center">
                         <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
-                        <a id="p0" class="col-12 col-md-4"
-                            href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
+                        <a id="p0" class="col-12 col-md-4" href="https://lamanu.fr/campus/amiens-formation-numerique/"
+                            target="_blank">
                             <img src="assets/img/logo_La_Manu.png" alt="La Manu">
                         </a>
                         <p class="col-12 col-md-8 m-0">
@@ -339,12 +349,14 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputLastname">Nom</label>
-                            <input type="text" class="form-control" id="inputLastname" name="inputLastname" pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Mancheron">
+                            <input type="text" class="form-control" id="inputLastname" name="inputLastname"
+                                pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Mancheron">
                             <div class="error"><?= $error['empty']['lastname'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputFirstname">Prénom</label>
-                            <input type="text" class="form-control" id="inputFirstname" name="inputFirstname" pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Vincent">
+                            <input type="text" class="form-control" id="inputFirstname" name="inputFirstname"
+                                pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Vincent">
                             <div class="error"><?= $error['empty']['firstname'] ?? '' ?></div>
                         </div>
                     </div>
@@ -353,18 +365,22 @@
                             <label for="inputEmail">Email</label>
                             <input type="email" class="form-control" id="inputEmail" name="inputEmail"
                                 pattern="$<?=$regEmail?>" placeholder="vmancheron@yahoo.fr">
-                                <div class="error"><?= $error['empty']['email'] ?? '' ?></div>
+                            <div class="error"><?= $error['empty']['email'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPhoneNumber">Téléphone</label>
-                            <input type="text" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber" pattern="<?=$regPhoneNumber?>" title="Indiquez une série de 10 chiffres sans caractère spéciaux." placeholder="07 88 22 87 29">
+                            <input type="text" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber"
+                                pattern="<?=$regPhoneNumber?>"
+                                title="Indiquez une série de 10 chiffres sans caractère spéciaux."
+                                placeholder="07 88 22 87 29">
                             <div class="error"><?= $error['empty']['phoneNumber'] ?? '' ?></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity">Ville</label>
-                            <input type="text" class="form-control" id="inputCity" name="inputCity" pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Amiens">
+                            <input type="text" class="form-control" id="inputCity" name="inputCity"
+                                pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Amiens">
                             <div class="error"><?= $error['empty']['city'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-4">
@@ -376,7 +392,8 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip" name="inputZip" pattern="<?=$regZip?>" title="Indiquez une série de 5 chiffres." placeholder="80000">
+                            <input type="text" class="form-control" id="inputZip" name="inputZip" pattern="<?=$regZip?>"
+                                title="Indiquez une série de 5 chiffres." placeholder="80000">
                             <div class="error"><?= $error['empty']['zip'] ?? '' ?></div>
                         </div>
                     </div>
@@ -389,7 +406,8 @@
                     </div>
                     <div class="form-group">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck" value="Done">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck"
+                                value="Done">
                             <label class="form-check-label" for="gridCheck">
                                 Je suis en accord avec les <a href=>CGC</a>.
                             </label>
@@ -452,7 +470,7 @@
             <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="tel:+3323232425">
+                        <a class="nav-link" href="tel:+33788228729">
                             <img src="assets/img/tel.png" alt="Téléphone">
                             07.88.22.87.29
                         </a>
@@ -484,6 +502,43 @@
                 </ul>
             </div>
         </nav>
+
+        <nav>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <img src="assets/img/mail.png" alt="Mail">
+                Contact
+            </button>
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="tel:+3323232425">
+                            <img src="assets/img/tel.png" alt="Téléphone">
+                            07.88.22.87.29
+                        </a>
+                        <a href="mailto:vmancheron@yahoo.fr">
+                            <img src="assets/img/mail.png" alt="Mail">
+                            vmancheron@yahoo.fr
+                        </a>
+                        <a href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">
+                            <img src="assets/img/map.png" alt="Map">
+                            Amiens (80),France
+                        </a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Fin Bottom NavBar -->
     </main>
 
