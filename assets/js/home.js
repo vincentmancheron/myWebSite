@@ -27,3 +27,7 @@ fetch('assets/json/carousel.json')
         alert("Error JSON carousel")
     })
 // Fin Carousel
+
+// Formulaire:
+document.querySelector('#contactForm').onclick = () => alert('Cette fonctionnalité est indisponible pour le moment.');
+// Fin Formulaire

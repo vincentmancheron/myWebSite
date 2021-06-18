@@ -123,6 +123,11 @@ figure img {
     filter: brightness(1000%);
 }
 
+.error {
+    color: red;
+    font-style: italic;
+}
+
 option {
     color: black;
 }

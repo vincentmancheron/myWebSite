@@ -1,60 +1,71 @@
 <?php
-    // Formulaire: 
+    // Formulaire:
+    $error = [];
+
     // Vérification Empty:
-    if (!empty($_POST['inputLastname'])) {
-        $lastname = $_POST['inputLastname']
-    } else {
-        $error['empty']['lastname'] = 'Le champ Nom est vide.'
-    }
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (!empty($_POST['inputLastname'])) {
+            $lastname = $_POST['inputLastname'];
+        } else {
+            $error['empty']['lastname'] = 'Le champ Nom est vide.';
+        }
+    
+        if (!empty($_POST['inputFirstname'])) {
+            $firstname = $_POST['inputFirstname'];
+        } else {
+            $error['empty']['firstname'] = 'Le champ Prénom est vide.';
+        }
+    
+        if (!empty($_POST['inputEmail'])) {
+            $email = $_POST['inputEmail'];
+        } else {
+            $error['empty']['email'] = 'Le champ Email est vide.';
+        }
+    
+        if (!empty($_POST['inputPhoneNumber'])) {
+            $phoneNumber = $_POST['inputPhoneNumber'];
+        } else {
+            $error['empty']['phoneNumber'] = 'Le champ Numéro de Téléphone est vide.';
+        }
+    
+        if (!empty($_POST['inputCity'])) {
+            $city = $_POST['inputCity'];
+        } else {
+            $error['empty']['city'] = 'Le champ Ville est vide.';
+        }
+    
+        if (!empty($_POST['inputState'])) {
+            $state = $_POST['inputState'];
+        } else {
+            $error['empty']['state'] = 'Le champ France est vide.';
+        }
+    
+        if (!empty($_POST['inputZip'])) {
+            $zip = $_POST['inputZip'];
+        } else {
+            $error['empty']['zip'] = 'Le champ Zip est vide.';
+        }
+    
+        if (!empty($_POST['inputMessage'])) {
+            $message = $_POST['inputMessage'];
+        } else {
+            $error['empty']['message'] = 'Le champ Message est vide.';
+        }
 
-    if (!empty($_POST['inputFirstname'])) {
-        $firstname = $_POST['inputFirstname']
-    } else {
-        $error['empty']['firstname'] = 'Le champ Prénom est vide.'
-    }
-
-    if (!empty($_POST['inputEmail'])) {
-        $email = $_POST['inputEmail']
-    } else {
-        $error['empty']['email'] = 'Le champ Email est vide.'
-    }
-
-    if (!empty($_POST['inputPhoneNumber'])) {
-        $phoneNumber = $_POST['inputPhoneNumber']
-    } else {
-        $error['empty']['phoneNumber'] = 'Le champ Numéro de Téléphone est vide.'
-    }
-
-    if (!empty($_POST['inputCity'])) {
-        $city = $_POST['inputCity']
-    } else {
-        $error['empty']['city'] = 'Le champ Ville est vide.'
-    }
-
-    if (!empty($_POST['inputState'])) {
-        $state = $_POST['inputState']
-    } else {
-        $error['empty']['state'] = 'Le champ France est vide.'
-    }
-
-    if (!empty($_POST['inputZip'])) {
-        $zip = $_POST['inputZip']
-    } else {
-        $error['empty']['zip'] = 'Le champ Zip est vide.'
-    }
-
-    if (!empty($_POST['inputMessage'])) {
-        $message = $_POST['inputMessage']
-    } else {
-        $error['empty']['message'] = 'Le champ Message est vide.'
+        if (!empty($_POST['gridCheck'])) {
+            $gridCheck = $_POST['gridCheck'];
+        } else {
+            $error['empty']['gridCheck'] = 'Il faut lire et accepter les CGCs.';
+        }
     }
 
     // Vérification Regex:
     $regAlpha = '[a-zA-Z]*';
-    $regNum = '\d*';
-    $regPostalAdress = '[0-9]{1-4}*[a-zA-Z]';
+    $regZip = '\d{5}';
     $regPhoneNumber = '(0|\+33)[1-9]( *[0-9]{2}){4}';
     $regEmail = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}';
+
+
     // Fin Formulaire
 ?>
 
@@ -97,7 +108,6 @@
 -Clean le code, améliorer le responsive (em ou % notamment pour les imgs.)
 -Faire une barre vertical de navigation dans la page et nav bar devient global (accueil, cv, veille, blog)
 -Rendre responsive la navbar du bas.
--Faire les pattern regex formulaire
 -Verif regex php formulaire
 -Value Formulaire $_POST
 -Finir mise en forme Formulaire
@@ -111,7 +121,8 @@
 -Enlever les bordures des cards dans exp et mettre les boutons à droite.
 -Les hovers ne marche pas dans la timeline trainings.
 -Le scroll Behavior ne marche plus.. 
--Mes a n'ont pas tous les text-decoration:none 
+-Mes a n'ont pas tous les text-decoration:none
+-Non selection de base sur la liste des pays dans le formulaire.
 -Carousel -->
 
 <body class="container-fluid">
@@ -218,6 +229,7 @@
         <!-- Offres -->
         <section id="offers" class="col">
             <h3>Offres</h3>
+            <h4 class="error text-center">Section en voie de construction, mon activité personnelle n'existe pas encore, étant actuellement en formation.</h4>
             <div class="row justify-content-around">
                 <div class="col-12 col-md-5 border">
                     <h4>Création d’un site Web:</h4>
@@ -240,8 +252,8 @@
         <!-- Portfolios -->
         <section id="portfolios" class="col">
             <h3>Portfolios</h3>
-            <div class="row">
-                <div class="col-12 col-md-6 offset-md-3">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
                     <figure id="manu" class="row border align-items-center">
                         <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
                         <a id="p0" class="col-12 col-md-4"
@@ -294,9 +306,9 @@
         <section id="contact" class="col">
             <h3>Contact</h3>
             <div class="row justify-content-around">
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-md-5">
                     <div class="row justify-content-center">
-                        <p class="border col-8 col-lg-4">
+                        <p class="border col-8 col-md-8 col-lg-6">
                             <a href="tel:+3323232425">Tel:<br>
                                 07.88.22.87.29<br><br>
                                 <a href="mailto:vmancheron@yahoo.fr">Mail:<br>
@@ -323,56 +335,65 @@
                     </div>
                 </div>
 
-                <form class="col-12 col-lg-5" action="index.php" method="POST">
+                <form id="contactForm" class="col-12 col-md-5" action="index.php" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputLastname">Nom</label>
-                            <input type="text" class="form-control" id="inputLastname" name="inputLastname" placeholder="Mancheron">
+                            <input type="text" class="form-control" id="inputLastname" name="inputLastname" pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Mancheron">
+                            <div class="error"><?= $error['empty']['lastname'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputFirstname">Prénom</label>
-                            <input type="text" class="form-control" id="inputFirstname" name="inputFirstname" placeholder="Vincent">
+                            <input type="text" class="form-control" id="inputFirstname" name="inputFirstname" pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Vincent">
+                            <div class="error"><?= $error['empty']['firstname'] ?? '' ?></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail">Email</label>
                             <input type="email" class="form-control" id="inputEmail" name="inputEmail"
-                                placeholder="vmancheron@yahoo.fr">
+                                pattern="$<?=$regEmail?>" placeholder="vmancheron@yahoo.fr">
+                                <div class="error"><?= $error['empty']['email'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPhoneNumber">Téléphone</label>
-                            <input type="text" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber" placeholder="07.88.22.87.29">
+                            <input type="text" class="form-control" id="inputPhoneNumber" name="inputPhoneNumber" pattern="<?=$regPhoneNumber?>" title="Indiquez une série de 10 chiffres sans caractère spéciaux." placeholder="07 88 22 87 29">
+                            <div class="error"><?= $error['empty']['phoneNumber'] ?? '' ?></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity">Ville</label>
-                            <input type="text" class="form-control" id="inputCity" name="inputCity" placeholder="Amiens">
+                            <input type="text" class="form-control" id="inputCity" name="inputCity" pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Amiens">
+                            <div class="error"><?= $error['empty']['city'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputState">Pays</label>
                             <select id="inputState" name="inputState" class="form-control">
-                                <option selected>Choisir</option>
+                                <option>Choisir</option>
                             </select>
+                            <div class="error"><?= $error['empty']['state'] ?? '' ?></div>
                         </div>
                         <div class="form-group col-md-2">
                             <label for="inputZip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip" name="inputZip" placeholder="80000">
+                            <input type="text" class="form-control" id="inputZip" name="inputZip" pattern="<?=$regZip?>" title="Indiquez une série de 5 chiffres." placeholder="80000">
+                            <div class="error"><?= $error['empty']['zip'] ?? '' ?></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="inputText">Votre message</label>
                             <textarea class="form-control" id="inputText" name="inputText"></textarea>
+                            <div class="error"><?= $error['empty']['message'] ?? '' ?></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck" value="Done">
                             <label class="form-check-label" for="gridCheck">
                                 Je suis en accord avec les <a href=>CGC</a>.
                             </label>
+                            <div class="error"><?= $error['empty']['gridCheck'] ?? '' ?></div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Soumettre</button>
@@ -423,7 +444,7 @@
         <!-- Fin Faux Footer -->
 
         <!-- Bottom NavBar -->
-        <nav id="stickybot" class="col navbar navbar-expand-lg py-0">
+        <nav id="stickybot" class="col navbar d-none d-lg-block navbar-expand-lg py-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
