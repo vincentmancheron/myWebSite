@@ -176,7 +176,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item active mx-4">
-                        <a class="nav-link disabled" href=>Blog</a>
+                        <a class="nav-link disabled">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -192,17 +192,17 @@
                     </div>
                 </div>
                 <div id="language" class="dropdown nav-item mx-lg-2 my-lg-0 py-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img id="flag" class="flag py-2" src="assets/img/en.png" alt="English version">
+                        <img id="flag" class="py-2" src="assets/img/en.png" alt="English version">
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <ul>
                             <li>
-                                <img id="en" class="flag flagSelect py-2" src="assets/img/en.png" alt="English version">
+                                <img id="en" class="flagSelect py-2" src="assets/img/en.png" alt="English version">
                             </li>
                             <li>
-                                <img id="fr" class="flag flagSelect py-2" src="assets/img/fr.png" alt="English version">
+                                <img id="fr" class="flagSelect py-2" src="assets/img/fr.png" alt="English version">
                             </li>
                         </ul>
                     </div>

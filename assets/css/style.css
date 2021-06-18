@@ -75,8 +75,13 @@ figure img {
     list-style: none;
 }
 
-.flag {
-    width: 3em;
+#buttonFlag {
+    padding: 0.1rem 0.5em;
+}
+
+#flag,
+.flagSelect {
+    width: 2em;
 }
 
 #stickybot {
