@@ -1,3 +1,5 @@
+/* Une partie du Style est réalisé en JS avec ColorMod() */
+
 /* ---Généralités--- */
 * {
     box-sizing: border-box;
@@ -15,6 +17,7 @@ main {
     display: flex;
     flex-direction: column;
     opacity: 90%;
+    padding: 0 2em;
 }
 
 section {
@@ -103,6 +106,10 @@ figure img {
 /* Fin Navbar */
 
 /* Portfolios */
+#portfolios h3 {
+    padding-bottom: 0;
+}
+
 #portfolios figure :hover {
     opacity: 85%;
     border-radius: 5em;

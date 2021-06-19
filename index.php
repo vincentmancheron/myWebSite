@@ -117,11 +117,19 @@
 -Clean le code, améliorer le responsive (em ou % notamment pour les imgs.)
 -Faire une barre vertical de navigation dans la page et nav bar devient global (accueil, cv, veille, blog)
 -Rendre responsive la navbar du bas.
+-Redirection Contact dans le CV -->
+
+<!-- Portfolios:
+-id p1 p2 etc a refaire pour les hovers.
+-Faire des hovers pour mettre toutes les infos importantes.
+-Faire une bibliothèques ouvrable pour les mini-projets solos.
+-Plus tard, faire une bibli ouvrable pour les projets word press. -->
+
+<!-- Formulaire:
 -Verif regex php formulaire
 -Value Formulaire $_POST
 -Finir mise en forme Formulaire
--Sécuriser le formulaire avec des technos + avancés 
--Redirection Contact dans le CV -->
+-Sécuriser le formulaire avec des technos + avancés -->
 
 <!-- Bugs:
 -Mettre les images en opacity 100%.
@@ -192,8 +200,8 @@
                     </div>
                 </div>
                 <div id="language" class="dropdown nav-item mx-lg-2 my-lg-0 py-2">
-                    <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img id="flag" class="py-2" src="assets/img/en.png" alt="English version">
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -214,8 +222,39 @@
         </nav>
         <!-- Fin Top Navbar Index -->
 
+        <section id="aPropos" class="col">
+            <h3>A propos de moi</h3>
+            <div class="row justify-content-center border mx-5">
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <figure id="manu" class="row align-items-center">
+                        <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
+                        <a id="p0" class="col-12 col-md-4" href="https://lamanu.fr/campus/amiens-formation-numerique/"
+                            target="_blank">
+                            <img src="assets/img/logo_La_Manu.png" alt="La Manu">
+                        </a>
+                        <p class="col-12 col-md-8 m-0">
+                            J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
+                            Formations.<br>
+                            L'ensemble de mon portfolio se résume aux projets réalisés en son sein.<br>
+                            J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que
+                            vous
+                            puissiez constater ma progression !
+                        </p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row text-center border mx-5 py-3">
+                <div class="col-12">
+                    <h4>Pourquoi me faire confiance ?</h4>
+                    <p>Je suis formé par le grand maître Thierry Lachat, Chancelier suprême de la
+                        programmation<br>
+                        et Monarque des Divs qui se centrent. Google j'attend votre appel, bisous.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Carousel -->
-        <section id="carousel" class="col carousel slide carousel-fade" data-ride="carousel">
+        <section id="carousel" class="col carousel slide carousel-fade d-none" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="3000">
                     <a target="_blank">
@@ -262,51 +301,85 @@
         <!-- Portfolios -->
         <section id="portfolios" class="col">
             <h3>Portfolios</h3>
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8">
-                    <figure id="manu" class="row border align-items-center">
-                        <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
-                        <a id="p0" class="col-12 col-md-4" href="https://lamanu.fr/campus/amiens-formation-numerique/"
-                            target="_blank">
-                            <img src="assets/img/logo_La_Manu.png" alt="La Manu">
-                        </a>
-                        <p class="col-12 col-md-8 m-0">
-                            J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
-                            Formations.<br>
-                            L'ensemble de mon portfolio se résume aux projets réalisés en son sein.<br>
-                            J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que
-                            vous
-                            puissiez constater ma progression !
-                        </p>
-                    </figure>
+            <h6 class="text-center p-0">L'ensemble de ce portfolio à été développé dans le cadre de ma formation à la
+                Manu.</h6>
+            <div class="row">
+                <div class="col">
+                    <h4 class="ml-5 mt-4">Mon projet principal: shop.ATH</h4>
+                    <div class="row justify-content-around my-3">
+                        <figure class="col-12 col-lg-3">
+                            <a id="p1" href="" target="_blank">
+                                <img src="assets/img/logoath_c.jpg" alt="Trello shop.ATH">
+                            </a>
+                            <figcaption>Le Trello</figcaption>
+                        </figure>
+                        <figure class="col-12 col-lg-3">
+                            <a id="p2" href="" target="_blank">
+                                <img src="assets/img/logoath_c.jpg" alt="Maquette shop.ATH">
+                            </a>
+                            <figcaption>La Maquette</figcaption>
+                        </figure>
+                        <figure class="col-12 col-lg-3">
+                            <a id="p3" href="" target="_blank">
+                                <img src="assets/img/logoath_c.jpg" alt="Site shop.ATH">
+                            </a>
+                            <figcaption>Le Site</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-around my-3">
-                <figure class="col-12 col-lg-3">
-                    <a id="p1" href="https://vincentmancheron.github.io/JournalATH/" target="_blank">
-                        <img src="assets/img/logoath_c.jpg" alt="ATH News">
-                    </a>
-                    <figcaption>1er projet (solo): ATH News</figcaption>
-                </figure>
-                <figure class="col-12 col-lg-3">
-                    <a id="p2" href="https://ludovicarduino.github.io/littleitaly/" target="_blank">
-                        <img src="assets/img/littleitalyweb.png" alt="Little Italy">
-                    </a>
-                    <figcaption>2ème projet: Little Italy</figcaption>
-                </figure>
-                <figure class="col-12 col-lg-3">
-                    <a id="p3" href="https://cedricgallet.github.io/Quattro_Stagioni/" target="_blank">
-                        <img src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
-                    </a>
-                    <figcaption>3ème projet: Quattro Stagioni</figcaption>
-                </figure>
+            <div class="row">
+                <div class="col-6 offset-3 border"></div>
             </div>
-            <div class="row text-center border mx-5 py-3">
-                <div class="col-12">
-                    <h4>Pourquoi me faire confiance ?</h4>
-                    <p>Je suis formé par le grand maître Thierry Lachat, Chancelier suprême de la
-                        programmation<br>
-                        et Monarque des Divs qui se centrent. Google j'attend votre appel, bisous.</p>
+            <div class="row">
+                <div class="col">
+                    <h4 class="ml-5 mt-4">Mes projets Solo:</h4>
+                    <div class="row justify-content-around my-3">
+                        <figure class="col-12 col-lg-3">
+                            <a id="p1" href="https://vincentmancheron.github.io/JournalATH/" target="_blank">
+                                <img src="assets/img/logoath_c.jpg" alt="ATH News">
+                            </a>
+                            <figcaption>1er projet: ATH News</figcaption>
+                        </figure>
+                        <figure class="col-12 col-lg-3">
+                            <a id="p1" href="https://vincentmancheron.github.io/JournalATH/" target="_blank">
+                                <img src="assets/img/logoath_c.jpg" alt="ATH News">
+                            </a>
+                            <figcaption>Mini-projet: Shifumi</figcaption>
+                        </figure>
+                        <figure class="col-12 col-lg-3">
+                            <a id="p3" href="https://cedricgallet.github.io/Quattro_Stagioni/" target="_blank">
+                                <img src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
+                            </a>
+                            <figcaption>Elagage80</figcaption>
+                            <!-- 5eme projet, 1er Wordpress -->
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 class="ml-5 mt-4">Mes projets de groupe:</h4>
+                    <div class="row justify-content-around my-3">
+                        <figure class="col-12 col-lg-3">
+                            <a id="p2" href="https://ludovicarduino.github.io/littleitaly/" target="_blank">
+                                <img src="assets/img/littleitalyweb.png" alt="Little Italy">
+                            </a>
+                            <figcaption>2ème projet: Little Italy</figcaption>
+                        </figure>
+                        <figure class="col-12 col-lg-3">
+                            <a id="p3" href="https://cedricgallet.github.io/Quattro_Stagioni/" target="_blank">
+                                <img src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
+                            </a>
+                            <figcaption>3ème projet: Quattro Stagioni</figcaption>
+                        </figure>
+                        <figure class="col-12 col-lg-3">
+                            <a id="p2" href="https://ludovicarduino.github.io/littleitaly/" target="_blank">
+                                <img src="assets/img/littleitalyweb.png" alt="Little Italy">
+                            </a>
+                            <figcaption>4ème projet: sneakers.Shop</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
@@ -450,12 +523,6 @@
                 </li>
                 <li>
                     <a href="pages/cv.html#hobbies">Loisirs</a>
-                </li>
-                <li>
-                    <a href="pages/cv.html#portfolios">Portfolios</a>
-                </li>
-                <li>
-                    <a href="pages/cv.html#contact">Contact</a>
                 </li>
             </ul>
         </div>
