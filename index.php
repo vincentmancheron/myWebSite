@@ -1,105 +1,19 @@
-<?php
-    // Formulaire:
-    $error = ['empty','regMatch'];
-    $error['empty'] = [];
-    $error['regMatch'] = [];
+<!-- Fonctions PHP -->
+<?php include('includes/functions/form.php') ?>
 
-    // Vérification Empty:
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        if (!empty($_POST['inputLastname'])) {
-            $lastname = $_POST['inputLastname'];
-        } else {
-            $error['empty']['lastname'] = 'Le champ Nom est vide.';
-        }
-    
-        if (!empty($_POST['inputFirstname'])) {
-            $firstname = $_POST['inputFirstname'];
-        } else {
-            $error['empty']['firstname'] = 'Le champ Prénom est vide.';
-        }
-    
-        if (!empty($_POST['inputEmail'])) {
-            $email = $_POST['inputEmail'];
-        } else {
-            $error['empty']['email'] = 'Le champ Email est vide.';
-        }
-    
-        if (!empty($_POST['inputPhoneNumber'])) {
-            $phoneNumber = $_POST['inputPhoneNumber'];
-        } else {
-            $error['empty']['phoneNumber'] = 'Le champ Numéro de Téléphone est vide.';
-        }
-    
-        if (!empty($_POST['inputCity'])) {
-            $city = $_POST['inputCity'];
-        } else {
-            $error['empty']['city'] = 'Le champ Ville est vide.';
-        }
-    
-        if (!empty($_POST['inputState'])) {
-            $state = $_POST['inputState'];
-        } else {
-            $error['empty']['state'] = 'Le champ Pays est vide.';
-        }
-    
-        if (!empty($_POST['inputZip'])) {
-            $zip = $_POST['inputZip'];
-        } else {
-            $error['empty']['zip'] = 'Le champ Zip est vide.';
-        }
-    
-        if (!empty($_POST['inputMessage'])) {
-            $message = $_POST['inputMessage'];
-        } else {
-            $error['empty']['message'] = 'Le champ Message est vide.';
-        }
-
-        if (!empty($_POST['gridCheck'])) {
-            $gridCheck = $_POST['gridCheck'];
-        } else {
-            $error['empty']['gridCheck'] = 'Il faut lire et accepter les CGCs.';
-        }
-    }
-
-    // Vérification Regex:
-    $regAlpha = '[a-zA-Z]*';
-    $regZip = '\d{5}';
-    $regPhoneNumber = '(0|\+33)[1-9]( *[0-9]{2}){4}';
-    $regEmail = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}';
-
-    // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //     if (!empty($_POST['lastname'])) {
-    //         preg_match($regAlpha, $lastname, $answer, PREG_OFFSET_CAPTURE);
-    //         if ($answer) {
-    //             $error['regMatch']['lastname'] = false;
-    //         }
-    //     }
-    // }
-    // Fin Formulaire
-?>
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- Head -->
+<?php include('includes/content/common/head.php') ?>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Vincent Mancheron - Développeur Web Junior - Site personnel</title>
     <meta name="description" content="Site Web de Vincent Mancheron, Développeur Web Junior en Formation à La Manu Amiens.
     Vous y retrouverez ses Offres, son Portfolio, son CV ainsi que son Blog.">
 </head>
+<!-- Fin Head -->
 
 <!-- Figma: https://www.figma.com/file/uOyWpKxmXG1hKp6cLzTKMj/CV-num%C3%A9rique?node-id=0%3A1 -->
 
 <!-- A faire:
+-Refaire tous les commentaires de structuration avec un de début et un de fin.
 -Light/DarkMode.
 -Traduire en Anglais.
 -Bouton télécharger CV + Refaire le cv.
@@ -149,7 +63,7 @@
 <body class="container-fluid">
     <!-- Header Index -->
     <header id="home" class="row justify-content-around">
-        <div id="profilPicture" class="col-12 col-md-5">
+        <div id="profilPicture" class="d-none d-md-block col-md-5">
             <img class="h-100" src="assets/img/photo.png" alt="Portrait personnel">
         </div>
         <div class="col-12 col-md-7 d-flex align-items-center justify-content-around">
@@ -169,73 +83,21 @@
     <!-- Fin Header Index -->
 
     <main class="row">
-        <!-- Top NavBar Index -->
-        <nav id="nav" class="col navbar sticky-top navbar-expand-lg navbar-light bg-light py-1">
-            <a href="pages/cv.html" class="navbar-brand ml-4">Mon CV</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active mx-4">
-                        <a class="nav-link" href="#offers">Offres</a>
-                    </li>
-                    <li class="nav-item active mx-4">
-                        <a class="nav-link" href="#portfolios">Portfolios</a>
-                    </li>
-                    <li class="nav-item active mx-4">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item active mx-4">
-                        <a class="nav-link disabled">Blog</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end pr-2 mr-5" id="navbarNav">
-                <div class="nav-item active mx-lg-2 my-lg-0 py-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Télécharger
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="assets/ress/CV_Vincent_Mancheron.odt" download>CV Papier</a>
-                        <a class="dropdown-item" href="#">Lettre de motivation</a>
-                    </div>
-                </div>
-                <div id="language" class="dropdown nav-item mx-lg-2 my-lg-0 py-2">
-                    <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img id="flag" class="py-2" src="assets/img/en.png" alt="English version">
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <ul>
-                            <li>
-                                <img id="en" class="flagSelect py-2" src="assets/img/en.png" alt="English version">
-                            </li>
-                            <li>
-                                <img id="fr" class="flagSelect py-2" src="assets/img/fr.png" alt="English version">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="nav-item active mx-lg-2 my-lg-0 py-2">
-                    <button class="btn btn-primary" id="colorMod">Light Mode</button>
-                </div>
-            </div>
-        </nav>
-        <!-- Fin Top Navbar Index -->
-
-        <div id="main2">
-            <section id="aPropos" class="col">
+        <!-- NavBar -->
+        <?php include('includes/content/common/navBar.php') ?>
+        
+        <!-- Corps de page -->
+        <div id="main2" class="col d-flex flex-column align-items-center">
+            <!-- A propos -->
+            <section id="aPropos" class="row">
                 <h3>A propos de moi</h3>
                 <div class="row justify-content-center border mx-5">
                     <div class="col-12 col-lg-10 col-xl-8">
                         <figure id="manu" class="row align-items-center">
                             <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
-                            <a id="p0" class="col-12 col-md-4" href="https://lamanu.fr/campus/amiens-formation-numerique/"
-                                target="_blank">
-                                <img src="assets/img/logo_La_Manu.png" alt="La Manu">
+                            <a id="p0" class="col-12 col-md-4"
+                                href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
+                                <img class="img-fluid" src="assets/img/logo_La_Manu.png" alt="La Manu">
                             </a>
                             <p class="col-12 col-md-8 m-0">
                                 J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
@@ -257,56 +119,40 @@
                     </div>
                 </div>
             </section>
-
-            <!-- Carousel -->
-            <section id="carousel" class="col carousel slide carousel-fade d-none" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="3000">
-                        <a target="_blank">
-                            <img class="d-block w-100">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block"></div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Précédent</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Suivant</span>
-                </a>
-            </section>
-            <!-- Fin Carousel -->
+            <!-- Fin A propos -->
 
             <!-- Offres -->
-            <section id="offers" class="col">
-                <h3>Offres</h3>
-                <h4 class="error text-center">Section en voie de construction, mon activité personnelle n'existe pas encore,
+            <section id="offers" class="row">
+                <h3 class="col">Offres</h3>
+                <h4 class="col error text-center">Section en voie de construction, mon activité personnelle n'existe pas
+                    encore,
                     étant actuellement en formation.</h4>
-                <div class="row justify-content-around">
-                    <div class="col-12 col-md-5 border">
-                        <h4>Création d’un site Web:</h4>
-                        <p>Commandez votre site Web construit de A à Z, avec des renforcements SEO et en
-                            Cybersécurité.</p>
-                        <!-- <button>Demander un devis</button> -->
-                    </div>
-                    <div class="col-12 col-md-5 border">
-                        <h4>Audit SEO:</h4>
-                        <p>Augmenter votre visibilité grâce à mon expertise SEO.<br>
-                            Je ferais en sorte que votre site gagne en référencement sur les moteurs de recherche
-                            tel que
-                            Google.</p>
-                        <!-- <button>Demander un devis</button> -->
+                <div class="col">
+                    <div class="row justify-content-around">
+                        <div class="col-12 col-md-5 border">
+                            <h4>Création d’un site Web:</h4>
+                            <p>Commandez votre site Web construit de A à Z, avec des renforcements SEO et en
+                                Cybersécurité.</p>
+                            <!-- <button>Demander un devis</button> -->
+                        </div>
+                        <div class="col-12 col-md-5 border">
+                            <h4>Audit SEO:</h4>
+                            <p>Augmenter votre visibilité grâce à mon expertise SEO.<br>
+                                Je ferais en sorte que votre site gagne en référencement sur les moteurs de recherche
+                                tel que
+                                Google.</p>
+                            <!-- <button>Demander un devis</button> -->
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- Fin Offres -->
 
             <!-- Portfolios -->
-            <section id="portfolios" class="col">
+            <section id="portfolios" class="row">
                 <h3>Portfolios</h3>
-                <h6 class="text-center p-0">L'ensemble de ce portfolio à été développé dans le cadre de ma formation à la
+                <h6 class="text-center p-0">L'ensemble de ce portfolio à été développé dans le cadre de ma formation à
+                    la
                     Manu.</h6>
                 <div class="row">
                     <div class="col">
@@ -314,19 +160,19 @@
                         <div class="row justify-content-around my-3">
                             <figure class="col-12 col-lg-3">
                                 <a id="p1" href="" target="_blank">
-                                    <img src="assets/img/logoath_c.jpg" alt="Trello shop.ATH">
+                                    <img class="img-fluid" src="assets/img/logoath_c.jpg" alt="Trello shop.ATH">
                                 </a>
                                 <figcaption>Le Trello</figcaption>
                             </figure>
                             <figure class="col-12 col-lg-3">
                                 <a id="p2" href="" target="_blank">
-                                    <img src="assets/img/logoath_c.jpg" alt="Maquette shop.ATH">
+                                    <img class="img-fluid" src="assets/img/logoath_c.jpg" alt="Maquette shop.ATH">
                                 </a>
                                 <figcaption>La Maquette</figcaption>
                             </figure>
                             <figure class="col-12 col-lg-3">
                                 <a id="p3" href="" target="_blank">
-                                    <img src="assets/img/logoath_c.jpg" alt="Site shop.ATH">
+                                    <img class="img-fluid" src="assets/img/logoath_c.jpg" alt="Site shop.ATH">
                                 </a>
                                 <figcaption>Le Site</figcaption>
                             </figure>
@@ -342,19 +188,19 @@
                         <div class="row justify-content-around my-3">
                             <figure class="col-12 col-lg-3">
                                 <a id="p1" href="https://vincentmancheron.github.io/JournalATH/" target="_blank">
-                                    <img src="assets/img/logoath_c.jpg" alt="ATH News">
+                                    <img class="img-fluid" src="assets/img/logoath_c.jpg" alt="ATH News">
                                 </a>
                                 <figcaption>1er projet: ATH News</figcaption>
                             </figure>
                             <figure class="col-12 col-lg-3">
                                 <a id="p1" href="https://vincentmancheron.github.io/JournalATH/" target="_blank">
-                                    <img src="assets/img/logoath_c.jpg" alt="ATH News">
+                                    <img class="img-fluid" src="assets/img/logoath_c.jpg" alt="ATH News">
                                 </a>
                                 <figcaption>Mini-projet: Shifumi</figcaption>
                             </figure>
                             <figure class="col-12 col-lg-3">
                                 <a id="p3" href="https://cedricgallet.github.io/Quattro_Stagioni/" target="_blank">
-                                    <img src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
+                                    <img class="img-fluid" src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
                                 </a>
                                 <figcaption>Elagage80</figcaption>
                                 <!-- 5eme projet, 1er Wordpress -->
@@ -368,19 +214,19 @@
                         <div class="row justify-content-around my-3">
                             <figure class="col-12 col-lg-3">
                                 <a id="p2" href="https://ludovicarduino.github.io/littleitaly/" target="_blank">
-                                    <img src="assets/img/littleitalyweb.png" alt="Little Italy">
+                                    <img class="img-fluid" src="assets/img/littleitalyweb.png" alt="Little Italy">
                                 </a>
                                 <figcaption>2ème projet: Little Italy</figcaption>
                             </figure>
                             <figure class="col-12 col-lg-3">
                                 <a id="p3" href="https://cedricgallet.github.io/Quattro_Stagioni/" target="_blank">
-                                    <img src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
+                                    <img class="img-fluid" src="assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
                                 </a>
                                 <figcaption>3ème projet: Quattro Stagioni</figcaption>
                             </figure>
                             <figure class="col-12 col-lg-3">
                                 <a id="p2" href="https://ludovicarduino.github.io/littleitaly/" target="_blank">
-                                    <img src="assets/img/littleitalyweb.png" alt="Little Italy">
+                                    <img class="img-fluid" src="assets/img/littleitalyweb.png" alt="Little Italy">
                                 </a>
                                 <figcaption>4ème projet: sneakers.Shop</figcaption>
                             </figure>
@@ -391,7 +237,7 @@
             <!-- Fin Portfolios -->
 
             <!-- Contact -->
-            <section id="contact" class="col">
+            <section id="contact" class="row">
                 <h3>Contact</h3>
                 <div class="row justify-content-around">
                     <div class="col-12 col-md-5">
@@ -428,7 +274,8 @@
                             <div class="form-group col-md-6">
                                 <label for="inputLastname">Nom</label>
                                 <input type="text" class="form-control" id="inputLastname" name="inputLastname"
-                                    pattern="<?=$regAlpha?>" title="N'utilisez que des lettres." placeholder="Mancheron">
+                                    pattern="<?=$regAlpha?>" title="N'utilisez que des lettres."
+                                    placeholder="Mancheron">
                                 <div class="error"><?= $error['empty']['lastname'] ?? '' ?></div>
                             </div>
                             <div class="form-group col-md-6">
@@ -470,8 +317,9 @@
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip" name="inputZip" pattern="<?=$regZip?>"
-                                    title="Indiquez une série de 5 chiffres." placeholder="80000">
+                                <input type="text" class="form-control" id="inputZip" name="inputZip"
+                                    pattern="<?=$regZip?>" title="Indiquez une série de 5 chiffres."
+                                    placeholder="80000">
                                 <div class="error"><?= $error['empty']['zip'] ?? '' ?></div>
                             </div>
                         </div>
@@ -497,145 +345,37 @@
                 </div>
             </section>
             <!-- Fin Contact -->
-        </div>
 
-        <!-- Faux Footer -->
-        <div id="footer" class="col d-flex justify-content-around">
-            <ul>
-                <h5>Accueil</h5>
-                <li>
-                    <a href="#aPropos">A propos</a>
-                </li>
-                <li>
-                    <a href="#offers">Offres</a>
-                </li>
-                <li>
-                    <a href="#portfolios">Portfolios</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="">Blog</a>
-                </li>
-            </ul>
-            <ul>
-                <h5>CV</h5>
-                <li>
-                    <a href="pages/cv.html#exp">Expériences</a>
-                </li>
-                <li>
-                    <a href="pages/cv.html#trainings">Formations</a>
-                </li>
-                <li>
-                    <a href="pages/cv.html#skills">Compétences</a>
-                </li>
-                <li>
-                    <a href="pages/cv.html#hobbies">Loisirs</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Fin Faux Footer -->
-
-        <!-- Bottom NavBar -->
-        <nav id="stickybot" class="col navbar d-none d-lg-block navbar-expand-lg py-0">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="tel:+33788228729">
-                            <img src="assets/img/tel.png" alt="Téléphone">
-                            07.88.22.87.29
+            <!-- Carousel -->
+            <section id="carousel" class="row carousel slide carousel-fade d-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000">
+                        <a target="_blank">
+                            <img class="d-block w-100">
                         </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="mailto:vmancheron@yahoo.fr">
-                            <img src="assets/img/mail.png" alt="Mail">
-                            vmancheron@yahoo.fr
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">
-                            <img src="assets/img/map.png" alt="Map">
-                            Amiens (80),France
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item active">
-                        <div class="nav-link">
-                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
-                                data-placement="top" data-content="Top popover">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82240.25896853098!2d2.2145980207410108!3d49.89865138453622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78413d78b760b%3A0x40af13e816220e0!2sAmiens!5e0!3m2!1sfr!2sfr!4v1619872140589!5m2!1sfr!2sfr"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                                    Amiens (80), France
-                                </iframe>
-                            </button>
-                        </div>
-                    </li> -->
-                </ul>
-            </div>
-        </nav>
-
-        <nav>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal">
-                <img src="assets/img/mail.png" alt="Mail">
-                Contact
-            </button>
-        </nav>
-
-        <!-- Modal -->
-        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">Contact</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <a href="tel:+3323232425">
-                            <img src="assets/img/tel.png" alt="Téléphone">
-                            07.88.22.87.29
-                        </a>
-                        <a href="mailto:vmancheron@yahoo.fr">
-                            <img src="assets/img/mail.png" alt="Mail">
-                            vmancheron@yahoo.fr
-                        </a>
-                        <a href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">
-                            <img src="assets/img/map.png" alt="Map">
-                            Amiens (80),France
-                        </a>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <div class="carousel-caption d-none d-md-block"></div>
                     </div>
                 </div>
-            </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </section>
+            <!-- Fin Carousel -->
         </div>
-        <!-- Fin Bottom NavBar -->
-    </main>
+        <!-- Fin Corps de page -->
 
     <!-- Footer -->
-    <footer class="row pt-2 justify-content-center">
-        <p class="m-0">
-            CV codé en HTML5/CSS3 avec Bootstrap 4.6 par Vincent Mancheron &copy;2021 V.0.85
-        </p>
-    </footer>
-    <!-- Fin Footer -->
+    <?php include('includes/content/common/footer/main.php') ?>
 
-    <!-- Script Java -->
-    <script src="assets/js/script.js"></script>
+    <!-- Script JS -->
     <script src="assets/js/home.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
-    <!-- Fin Script Java -->
+    <?php include('includes/content/common/script.php') ?>
+    <!-- Fin Script JS -->
 </body>
 
 </html>

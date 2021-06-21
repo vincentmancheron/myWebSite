@@ -1,10 +1,7 @@
-/* xs */
+/* xs< */
 @media (max-width: 575px) {
     body {
         font-size: 0.8em;
-    }
-    #profilPicture {
-        display: none;
     }
     #exp button {
         width: 70%
@@ -24,12 +21,25 @@
     }
     /* Fin Skills */
 }
-/* Fin xs */
+/* Fin xs< */
 
-/* sm */
-/* Fin sm */
+/* sm< */
+@media (max-width: 767px) {
+    figure img {
+        width: 30vh;
+    }
+}
+/* Fin sm< */
 
-/* md */
+/* md< */
+@media (max-width: 991px) {
+    #deskStickyBot {
+        font-size: small;
+    }
+}
+/* Fin md< */
+
+/* >md */
 @media (min-width: 768px) {
     body {
         font-size: 1.1em;
@@ -41,9 +51,9 @@
         padding: 0 0 0 1em;
     }
 }
-/* Fin md */
+/* Fin >md */
 
-/* lg */
+/* >lg */
 @media (min-width: 992px) {
     #home {
         height: 100vh;
@@ -61,12 +71,12 @@
     }
     /* Fin Skills */
 }
-/* Fin lg */
+/* Fin >lg */
 
-/* xl */
+/* >xl */
 @media (min-width: 1200px) {
     nav {
         font-size: 1em;
     }
 }
-/* Fin xl */
+/* Fin >xl */

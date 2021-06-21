@@ -1,3 +1,8 @@
+// Fonctions bloquées:
+block = (id) => id.onclick = () => alert('Cette fonctionnalité n\'est pas encore disponible');
+block(document.querySelector('#contactForm'));
+// Fin Fonctions bloquées
+
 // Carousel:
 const innerCarousel = document.querySelector('.carousel-inner');
 const itemCarousel = document.querySelector('.carousel-item');

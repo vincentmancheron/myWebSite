@@ -10,7 +10,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: larger;
     background-image: url(../img/matrix.jpg);
-    filter: saturate(150%);
+    /* filter: saturate(150%); => Fait bugguer les modals ??... */
 }
 
 main {
@@ -52,8 +52,6 @@ figure {
 }
 
 figure img {
-    height: 30vh;
-    width: 30vh;
     border-radius: 2em;
 }
 
@@ -90,7 +88,7 @@ figure img {
     width: 2em;
 }
 
-#stickybot {
+.stickyBot {
     bottom: 0;
     position: sticky;
     opacity: 85%;
@@ -98,12 +96,17 @@ figure img {
     color: white;
 }
 
-#stickybot li {
-    margin: 0 5.5em;
+.stickyBot li {
+    margin-top: 1em;
+    list-style: none;
 }
 
-#stickybot img {
+.stickyBot img {
     width: 1.5em;
+}
+
+#respStickyBot a {
+    cursor: pointer;
 }
 
 /* Fin Navbar */
