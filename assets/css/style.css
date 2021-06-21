@@ -17,6 +17,9 @@ main {
     display: flex;
     flex-direction: column;
     opacity: 90%;
+}
+
+#main2 {
     padding: 0 2em;
 }
 
