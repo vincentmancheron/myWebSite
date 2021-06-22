@@ -1,5 +1,5 @@
 <nav id="nav" class="col navbar sticky-top navbar-expand-lg navbar-light bg-light py-1">
-    <?php
+    <!-- <?php
         $url = $_SERVER['REQUEST_URI'];
         if ($url != '/' || $url != '/index.php') {
             echo 
@@ -12,7 +12,9 @@
                 Mon CV
             </a>';
         }
-    ?>
+    ?> -->
+    <a href="/index.php" class="navbar-brand ml-4">Accueil</a>
+    <a href="/pages/cv.php" class="navbar-brand ml-4">Mon CV</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -73,4 +75,3 @@
         </div>
     </div>
 </nav>
-<?php echo $url; ?>
