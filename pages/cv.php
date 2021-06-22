@@ -16,28 +16,35 @@
     <main class="row">
         <!-- NavBar -->
         <?php include('../includes/content/common/navBar.php') ?>
+        <!-- Fin NavBar -->
 
         <!-- Corps de page -->
         <div id="main2" class="col">
             <!-- Expériences -->
             <?php include('../includes/content/specifics/cv/exp.php'); ?>
+            <!-- Fin Expériences -->
 
             <!-- Formations -->
             <?php include('../includes/content/specifics/cv/train.php'); ?>
+            <!-- Fin Formations -->
 
             <!-- Compétences -->
             <?php include('../includes/content/specifics/cv/skills.php'); ?>
+            <!-- Fin Compétences -->
 
             <!-- Loisirs -->
             <?php include('../includes/content/specifics/cv/hobbies.php'); ?>
+            <!-- Fin Loisirs -->
 
             <!-- Redirection -->
             <?php include('../includes/content/specifics/cv/redirect.php'); ?>
+            <!-- Fin Redirection -->
         </div>
         <!-- Fin Corps de page -->
 
     <!-- Footer -->
     <?php include('../includes/content/common/footer/main.php') ?>
+    <!-- Fin Footer -->
 
     <!-- Script JS -->
     <script src="/assets/js/cv.js"></script>

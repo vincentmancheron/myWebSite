@@ -1,3 +1,8 @@
+// Fonctions bloquées:
+block = (id) => id.forEach(element => element.onclick = () => alert('Cette fonctionnalité n\'est pas encore disponible.'))
+block(document.querySelectorAll('.blocked'));
+// Fin Fonctions bloquées
+
 // Bouton langue:
     document.querySelectorAll('.flagSelect').forEach(element => {
         element.onclick = () => {

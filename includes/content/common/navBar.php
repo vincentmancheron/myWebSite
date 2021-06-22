@@ -1,5 +1,18 @@
 <nav id="nav" class="col navbar sticky-top navbar-expand-lg navbar-light bg-light py-1">
-    <a href="/pages/cv.php" class="navbar-brand ml-4">Mon CV</a>
+    <?php
+        $url = $_SERVER['REQUEST_URI'];
+        if ($url != '/' || $url != '/index.php') {
+            echo 
+            '<a href="/index.php" class="navbar-brand ml-4">
+                Accueil
+            </a>';
+        } else {
+            echo 
+            '<a href="/pages/cv.php" class="navbar-brand ml-4">
+                Mon CV
+            </a>';
+        }
+    ?>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,13 +31,13 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item active mx-4">
-                <a class="nav-link disabled" href="/pages/veille.php">Veille</a>
+                <a class="nav-link blocked" href="">Veille</a>
             </li>
             <li class="nav-item active mx-4">
-                <a class="nav-link disabled" href="/pages/veille.php">eSport</a>
+                <a class="nav-link blocked" href="">eSport</a>
             </li>
             <li class="nav-item active mx-4">
-                <a class="nav-link disabled" href="/pages/veille.php">Blog</a>
+                <a class="nav-link blocked" href="">Blog</a>
             </li>
         </ul>
     </div>
@@ -39,7 +52,7 @@
                 <a class="dropdown-item disabled" href="">Lettre de motivation</a>
             </div>
         </div>
-        <div id="language" class="dropdown nav-item mx-lg-2 my-lg-0 py-2">
+        <div id="language" class="blocked dropdown nav-item mx-lg-2 my-lg-0 py-2">
             <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img id="flag" class="py-2" src="/assets/img/en.png" alt="English version">
@@ -60,3 +73,4 @@
         </div>
     </div>
 </nav>
+<?php echo $url; ?>

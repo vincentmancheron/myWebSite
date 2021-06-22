@@ -1,4 +1,4 @@
-<!-- RespBottomNavBar -->
+<!-- RespBottomNavBarModal -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
 aria-hidden="true">
     <div class="modal-dialog">
@@ -29,3 +29,4 @@ aria-hidden="true">
         </div>
     </div>
 </div>
+<!-- Fin RespBottomNavBarModal -->
