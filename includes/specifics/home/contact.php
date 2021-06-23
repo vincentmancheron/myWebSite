@@ -1,5 +1,4 @@
 <?php 
-// Formulaire:
 $error = ['empty','regMatch'];
 $error['empty'] = [];
 $error['regMatch'] = [];
@@ -75,10 +74,10 @@ $regEmail = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}';
 //         }
 //     }
 // }
-// Fin Formulaire
 ?>
 
 <section id="contact" class="row">
+    <?php var_dump($error['regMatch']) ?>
     <h3>Contact</h3>
     <div class="row justify-content-around">
         <div class="col-12 col-md-5">
@@ -110,7 +109,7 @@ $regEmail = '[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}';
             </div>
         </div>
 
-        <form id="contactForm" class="col-12 col-md-5" action="index.php" method="POST">
+        <form id="contactForm" class="col-12 col-md-5" action="index.php#contactForm" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6 mx-3 mx-md-0">
                     <label for="inputLastname">Nom</label>
