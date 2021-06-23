@@ -1,4 +1,4 @@
-<nav id="nav" class="col navbar sticky-top navbar-expand-lg navbar-light bg-light py-1">
+<nav id="nav" class="col navbar sticky-top navbar-expand-xl navbar-light bg-light py-1">
     <!-- <?php
         $url = $_SERVER['REQUEST_URI'];
         if ($url != '/' || $url != '/index.php') {
@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active mx-4">
-                <a class="nav-link" href="/index.php#offers">Offres</a>
+                <a class="nav-link blocked" href="">Offres</a>
             </li>
             <li class="nav-item active mx-4">
                 <a class="nav-link" href="/index.php#portfolios">Portfolios</a>
@@ -62,10 +62,10 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <ul>
                     <li>
-                        <img id="en" class="flagSelect py-2" src="/assets/img/en.png" alt="English version">
+                        <img id="en" class="flagSelect py-2" src="/assets/img/en.png" alt="Version anglaise">
                     </li>
                     <li>
-                        <img id="fr" class="flagSelect py-2" src="/assets/img/fr.png" alt="English version">
+                        <img id="fr" class="flagSelect py-2" src="/assets/img/fr.png" alt="Version française">
                     </li>
                 </ul>
             </div>

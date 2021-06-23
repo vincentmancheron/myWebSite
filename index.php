@@ -1,9 +1,5 @@
-<!-- Fonctions PHP -->
-<?php include('includes/functions/form.php') ?>
-<!-- Fin Fonctions PHP -->
-
 <!-- Head -->
-<?php include('includes/content/common/head.php') ?>
+<?php include('includes/common/head.php') ?>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Vincent Mancheron - Développeur Web Junior - Site personnel</title>
     <meta name="description" content="Site Web de Vincent Mancheron, Développeur Web Junior en Formation à La Manu Amiens.
@@ -63,45 +59,45 @@
 
 <body class="container-fluid">
     <!-- Header -->
-    <?php include('includes/content/specifics/home/header.php') ?>    
+    <?php include('includes/specifics/home/header.php') ?>    
     <!-- Fin Header -->
 
     <main class="row">
         <!-- NavBar -->
-        <?php include('includes/content/common/navBar.php') ?>
+        <?php include('includes/common/navBar.php') ?>
         <!-- Fin NavBar -->
         
         <!-- Corps de page -->
         <div id="main2" class="col d-flex flex-column align-items-center">
             <!-- A propos -->
-            <?php include('includes/content/specifics/home/propos.php') ?>
+            <?php include('includes/specifics/home/propos.php') ?>
             <!-- Fin A propos -->
             
             <!-- Offres -->
-            <?php include('includes/content/specifics/home/offers.php') ?>
+            <?php include('includes/specifics/home/offers.php') ?>
             <!-- Fin Offres -->
 
             <!-- Portfolios -->
-            <?php include('includes/content/specifics/home/portfolios.php') ?>
+            <?php include('includes/specifics/home/portfolios.php') ?>
             <!-- Fin Portfolios -->
 
             <!-- Contact -->
-            <?php include('includes/content/specifics/home/contact.php') ?>
+            <?php include('includes/specifics/home/contact.php') ?>
             <!-- Fin Contact -->
 
             <!-- Carousel -->
-            <?php include('includes/content/specifics/home/carousel.php') ?>
+            <?php include('includes/specifics/home/carousel.php') ?>
             <!-- Fin Carousel -->
         </div>
         <!-- Fin Corps de page -->
 
     <!-- Footer -->
-    <?php include('includes/content/common/footer/main.php') ?>
+    <?php include('includes/common/footer/main.php') ?>
     <!-- Fin Footer -->
 
     <!-- Script JS -->
     <script src="assets/js/home.js"></script>
-    <?php include('includes/content/common/script.php') ?>
+    <?php include('includes/common/script.php') ?>
     <!-- Fin Script JS -->
 </body>
 

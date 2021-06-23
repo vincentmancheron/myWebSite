@@ -10,7 +10,7 @@
             </div>
         </div>
         <a href="#nav" class="row">
-            <button id="fleche-bas" class="offset-1">
+            <button id="fleche-bas" class="offset-1 d-none d-md-block">
                 <img src="assets/img/fleche-bas.jpg" alt="Descendre">
             </button>
         </a>

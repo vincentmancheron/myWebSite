@@ -29,7 +29,7 @@
             <a class="blocked" href="">Blog</a>
         </li>
     </ul>
-    <ul>
+    <ul class="d-none d-md-block">
         <h5>Accueil</h5>
         <li>
             <a href="/index.php#aPropos">A propos</a>
@@ -44,7 +44,7 @@
             <a href="/index.php#contact">Contact</a>
         </li>
     </ul>
-    <ul>
+    <ul class="d-none d-md-block">
         <h5>CV</h5>
         <li>
             <a href="/pages/cv.php#exp">Expériences</a>

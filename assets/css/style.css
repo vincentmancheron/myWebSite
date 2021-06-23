@@ -121,9 +121,49 @@ figure img {
     border-radius: 5em;
 }
 
-#p3 img {
+/* #p1:hover {
+    content: 'Yololo';
+}
+
+#p2:hover {
+    content: 'Yololo';
+}
+
+#p3:hover {
+    content: 'Yololo';
+}
+
+#p4:hover {
+    content: 'Yololo';
+}
+
+#p5:hover {
+    content: 'Yololo';
+} */
+
+#p5 img {
+    background-color: #F3A829;
+}
+
+/* #p6:hover {
+    content: 'Yololo';
+}
+
+#p7:hover {
+    content: 'Yololo';
+}
+
+#p8:hover {
+    content: 'Yololo';
+} */
+
+#p8 img {
     background-color: white;
 }
+
+/* #p9:hover {
+    content: 'Yololo';
+} */
 
 /* Fin Portfolios */
 
@@ -180,10 +220,10 @@ option {
 }
 
 /* Fin Header */
-/* Carroussel */
+/* Carousel */
 #carousel img {
     height: 50vh;
 }
 
-/* Fin Carroussel */
+/* Fin Carousel */
 /* -Fin Home- */
