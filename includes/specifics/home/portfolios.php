@@ -3,29 +3,27 @@
     <h6 class="text-center p-0">L'ensemble de ce portfolio à été développé dans le cadre de ma formation à
         la
         Manu.</h6>
-    <div class="row">
-        <div class="col">
-            <h4 class="ml-5 mt-4">Mon projet principal: shop.ATH</h4>
-            <div class="row justify-content-around my-3">
-                <figure class="col-12 col-sm-3 col-lg-2">
-                    <a id="p1" class="blocked" href="" target="_blank">
-                        <img class="img-fluid" src="/assets/img/trello.png" alt="Trello shop.ATH">
-                    </a>
-                    <figcaption>Le Trello</figcaption>
-                </figure>
-                <figure class="col-12 col-sm-3 col-lg-2">
-                    <a id="p2" href="/assets/ress/ATHShop.pdf" download>
-                        <img class="img-fluid" src="assets/img/figma.png" alt="Maquette shop.ATH">
-                    </a>
-                    <figcaption>La Maquette</figcaption>
-                </figure>
-                <figure class="col-12 col-sm-3 col-lg-2">
-                    <a id="p3" href="" target="_blank">
-                        <img class="img-fluid" src="/assets/img/logoath_c.jpg" alt="Site shop.ATH">
-                    </a>
-                    <figcaption>Le Site</figcaption>
-                </figure>
-            </div>
+    <div class="col">
+        <h4 class="ml-5 mt-4">Mon projet principal: shop.ATH</h4>
+        <div class="row justify-content-around my-3">
+            <figure class="col-12 col-sm-3 col-lg-2">
+                <a id="p1" class="blocked" href="" target="_blank">
+                    <img class="img-fluid" src="/assets/img/trello.png" alt="Trello shop.ATH">
+                </a>
+                <figcaption>Le Trello</figcaption>
+            </figure>
+            <figure class="col-12 col-sm-3 col-lg-2">
+                <a id="p2" href="/assets/ress/ATHShop.pdf" download>
+                    <img class="img-fluid" src="assets/img/figma.png" alt="Maquette shop.ATH">
+                </a>
+                <figcaption>La Maquette</figcaption>
+            </figure>
+            <figure class="col-12 col-sm-3 col-lg-2">
+                <a id="p3" href="" target="_blank">
+                    <img class="img-fluid" src="/assets/img/logoath_c.jpg" alt="Site shop.ATH">
+                </a>
+                <figcaption>Le Site</figcaption>
+            </figure>
         </div>
     </div>
     <div class="row">

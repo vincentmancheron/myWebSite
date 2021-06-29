@@ -75,6 +75,10 @@ figure img {
 
 /* --Home+CV-- */
 /* Navbar */
+nav {
+    font-size: 0.9em !important;
+}
+
 #language ul {
     list-style: none;
 }
@@ -124,6 +128,10 @@ figure img {
 
 /* -Home- */
 /* Header */
+#profilPicture img {
+    height: 100vh;
+}
+
 #home {
     font-family: 'Zen Dots', sans-serif;
 }
@@ -140,8 +148,19 @@ figure img {
 
 /* Fin Header */
 /* A propos */
+#aPropos ul {
+    list-style: none;
+}
+
+#manu img {
+    width: 5em;
+    border-radius: 2em;
+}
+
 #photopropos {
-    width:4em;
+    width:9em;
+    height: 13em;
+    border-radius: 3em;
 }
 /* Fin A propos */
 

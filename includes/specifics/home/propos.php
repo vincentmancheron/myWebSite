@@ -1,33 +1,33 @@
 <section id="aPropos" class="row">
     <h3>A propos de moi</h3>
-    <div class="row justify-content-center border mx-5">
-        <div class="col-12 col-lg-10 col-xl-8">
-            <figure id="manu" class="row align-items-center">
-                <!-- Le Lien vers la manu devra être dupliqué ailleurs, ex: dans formations. -->
-                <a id="p0" class="col-12 col-md-4"
-                    href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
+    <div class="col">
+        <div class="row justify-content-center border mx-5 py-3">
+            <div class="col-12 col-lg-6 py-2 border">
+                <a id="manu" class="d-flex justify-content-center" href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
                     <img class="img-fluid" src="assets/img/logo_La_Manu.png" alt="La Manu">
                 </a>
-            </figure>
-            <p class="col-12 col-md-8 m-0">
-                J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
-                Formations.<br>
-                L'ensemble de mon portfolio se résume aux projets réalisés en son sein.<br>
-                J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que
-                vous
-                puissiez constater ma progression !
-            </p>
-            <div>
-                <img id="photopropos" src="/assets/img/vincentM3.jpg" alt="Photo personnelle">
+                <p>
+                    J'étudie en ce moment à la Manu Amiens, une école de la marque Novei
+                    Formations.<br>
+                    L'ensemble de mon portfolio se résume aux projets réalisés en son sein.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-end align-items-center">
+                <ul class="mr-5">
+                    <li>Vincent</li>
+                    <li>25 ans</li>
+                    <li>Amiens</li>
+                </ul>
+                <img id="photopropos" class="img-fluid" src="/assets/img/vincentM3b.jpg" alt="Photo personnelle">
             </div>
         </div>
-    </div>
-    <div class="row text-center border mx-5 py-3">
-        <div class="col-12">
-            <h4>Pourquoi me faire confiance ?</h4>
-            <p>Je suis formé par le grand maître Thierry Lachat, Chancelier suprême de la
-                programmation<br>
-                et Monarque des Divs qui se centrent. Google j'attend votre appel, bisous.</p>
+        <div class="row text-center border mx-5 py-3">
+            <div class="col-12">
+                <h4>Pourquoi me faire confiance ?</h4>
+                <p>Curieux et volontaire, je m'investis dans mes projets et cherche à comprendre comment faire mieux.<br>
+                Je suis concentré dans ma formation et espère progresser vers le domaine qui m'intéresse: <strong>La Cybersécurité</strong><br>
+                Je m'auto-forme et m'inspire de personnalités du milieu pour y arriver.</p>
+            </div>
         </div>
     </div>
 </section>

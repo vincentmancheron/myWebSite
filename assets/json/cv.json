@@ -32,6 +32,13 @@
     ],
 
     "trainings": [{
+            "title": "Titre Pro: Développeur Web/Web Mobile (2021)",
+            "imgSrc": "../assets/img/logo_La_Manu.png",
+            "imgAlt": "La Manu Amiens",
+            "description": "Formation intensive de 6 mois j'apprends à développer des sites Web cotés Front et Back.",
+            "link": "https://lamanu.fr/campus/amiens-formation-numerique/"
+        },
+        {
             "title": "License professionnelle Comptabilité/Paye (2019-2020)",
             "imgSrc": "../assets/img/cnam.png",
             "imgAlt": "CNAM Picardie",

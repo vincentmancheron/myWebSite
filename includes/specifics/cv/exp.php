@@ -1,4 +1,4 @@
-<section id="exp">
+<section id="exp" class="row">
     <h3>Expériences</h3>
-    <div class="main-timeline mb-5 mx-5"></div>
+    <div class="col main-timeline mb-5 mx-5"></div>
 </section>
