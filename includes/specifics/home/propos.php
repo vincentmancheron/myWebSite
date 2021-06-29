@@ -8,15 +8,18 @@
                     href="https://lamanu.fr/campus/amiens-formation-numerique/" target="_blank">
                     <img class="img-fluid" src="assets/img/logo_La_Manu.png" alt="La Manu">
                 </a>
-                <p class="col-12 col-md-8 m-0">
-                    J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
-                    Formations.<br>
-                    L'ensemble de mon portfolio se résume aux projets réalisés en son sein.<br>
-                    J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que
-                    vous
-                    puissiez constater ma progression !
-                </p>
             </figure>
+            <p class="col-12 col-md-8 m-0">
+                J'étudie en ce moment à la Manu Amiens, une école dont la marque est distribué par Novei
+                Formations.<br>
+                L'ensemble de mon portfolio se résume aux projets réalisés en son sein.<br>
+                J'ai fait exprès de ne pas retoucher à la structure et à l'identité graphique afin que
+                vous
+                puissiez constater ma progression !
+            </p>
+            <div>
+                <img id="photopropos" src="/assets/img/vincentM3.jpg" alt="Photo personnelle">
+            </div>
         </div>
     </div>
     <div class="row text-center border mx-5 py-3">

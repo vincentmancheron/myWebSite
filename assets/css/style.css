@@ -110,6 +110,40 @@ figure img {
 }
 
 /* Fin Navbar */
+/* Faux Footer */
+#footer ul {
+    list-style: none;
+}
+
+#footer h5 {
+    font-weight: 800;
+}
+
+/* Fin Faux Footer */
+/* --Fin Home+CV-- */
+
+/* -Home- */
+/* Header */
+#home {
+    font-family: 'Zen Dots', sans-serif;
+}
+
+#fleche-bas {
+    background-color: whitesmoke;
+    border-radius: 10em;
+}
+
+#fleche-bas img {
+    width: 2em;
+    height: 2em;
+}
+
+/* Fin Header */
+/* A propos */
+#photopropos {
+    width:4em;
+}
+/* Fin A propos */
 
 /* Portfolios */
 #portfolios h3 {
@@ -192,35 +226,6 @@ option {
 }
 
 /* Fin Contact */
-/* Faux Footer */
-#footer ul {
-    list-style: none;
-}
-
-#footer h5 {
-    font-weight: 800;
-}
-
-/* Fin Faux Footer */
-/* --Fin Home+CV-- */
-
-/* -Home- */
-/* Header */
-#home {
-    font-family: 'Zen Dots', sans-serif;
-}
-
-#fleche-bas {
-    background-color: whitesmoke;
-    border-radius: 10em;
-}
-
-#fleche-bas img {
-    width: 2em;
-    height: 2em;
-}
-
-/* Fin Header */
 /* Carousel */
 #carousel img {
     height: 50vh;

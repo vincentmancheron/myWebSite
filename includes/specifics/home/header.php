@@ -1,6 +1,6 @@
 <header id="home" class="row justify-content-around">
-    <div id="profilPicture" class="d-none d-md-block col-md-5">
-        <img class="h-100" src="assets/img/photo.png" alt="Portrait personnel">
+    <div id="profilPicture" class=" w-100 d-none d-md-block col-md-5">
+        <img class="w-100" src="assets/img/vincentM.jpg" alt="Portrait personnel">
     </div>
     <div class="col-12 col-md-7 d-flex flex-column">
         <div class="row my-5 h-75 d-flex align-items-center">

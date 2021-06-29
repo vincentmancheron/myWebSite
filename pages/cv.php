@@ -9,7 +9,7 @@
 <body class="container-fluid">
     <!-- Photo de couverture -->
     <header id="cvHeader" class="row">
-            <img class="w-100" src="/assets/img/couv.jpg" alt="Photo de couverture">
+            <img class="w-100" src="/assets/img/vincentM4b.png" alt="Photo de couverture">
     </header>
     <!-- Fin Photo de couverture -->
 
