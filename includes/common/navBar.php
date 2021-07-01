@@ -1,19 +1,7 @@
 <nav id="nav" class="col navbar sticky-top navbar-expand-xl navbar-light bg-light py-1">
-    <!-- <?php
-        $url = $_SERVER['REQUEST_URI'];
-        if ($url != '/' || $url != '/index.php') {
-            echo 
-            '<a href="/index.php" class="navbar-brand ml-4">
-                Accueil
-            </a>';
-        } else {
-            echo 
-            '<a href="/pages/cv.php" class="navbar-brand ml-4">
-                Mon CV
-            </a>';
-        }
-    ?> -->
-    <a href="/index.php" class="navbar-brand ml-4">Accueil</a>
+    <a href="/index.php#nav" class="navbar-brand ml-4">
+        <img id="logo2" src="/assets/img/vm.png" alt="Logo Retour Accueil">
+    </a>
     <a href="/pages/cv.php" class="navbar-brand ml-4">Mon CV</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,24 +9,24 @@
     </button>
     <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active mx-4">
+            <li class="nav-item active mx-3">
                 <a class="nav-link blocked" href="">Offres</a>
             </li>
-            <li class="nav-item active mx-4">
+            <li class="nav-item active mx-3">
                 <a class="nav-link" href="/index.php#portfolios">Portfolios</a>
             </li>
-            <li class="nav-item active mx-4">
+            <li class="nav-item active mx-3">
                 <a class="nav-link" href="/index.php#contact">Contact</a>
             </li>
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item active mx-4">
+            <li class="nav-item active mx-3">
                 <a class="nav-link blocked" href="">Veille</a>
             </li>
-            <li class="nav-item active mx-4">
+            <li class="nav-item active mx-3">
                 <a class="nav-link blocked" href="">eSport</a>
             </li>
-            <li class="nav-item active mx-4">
+            <li class="nav-item active mx-3">
                 <a class="nav-link blocked" href="">Blog</a>
             </li>
         </ul>

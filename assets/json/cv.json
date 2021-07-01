@@ -164,17 +164,17 @@
         "imgSrc": "/assets/img/html5.png",
         "imgAlt": "Logo HTML5",
         "value": "32",
-        "mention": "59/184 leçons apprises"
+        "mention": "59/184 leçons"
     },
     {
         "name": "Python",
         "imgSrc": "/assets/img/python.png",
         "imgAlt": "Logo Python",
         "value": "13",
-        "mention": "16/116 leçons apprises"
+        "mention": "16/116 leçons"
     },
     {
-        "name": "SQL (pas de certificat)",
+        "name": "SQL",
         "imgSrc": "/assets/img/sql.png",
         "imgAlt": "Logo SQL",
         "value": "0",

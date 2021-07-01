@@ -31,7 +31,6 @@ section {
     opacity: 92%;
     display: block !important;
     margin: 2em 0;
-    width: 100%;
     align-self: center;
 }
 
@@ -77,6 +76,10 @@ figure img {
 /* Navbar */
 nav {
     font-size: 0.9em !important;
+}
+
+#logo2 {
+    width: 3em;
 }
 
 #language ul {
@@ -134,6 +137,10 @@ nav {
 
 #home {
     font-family: 'Zen Dots', sans-serif;
+}
+
+#logo {
+    width: 10em;
 }
 
 #fleche-bas {

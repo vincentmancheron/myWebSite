@@ -3,13 +3,13 @@
 $error = [];
 $lastname = trim(filter_input(INPUT_POST, 'lastname', FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
 $firstname = trim(filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
-$email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL, FILTER_FLAG_NO_ENCODE_QUOTES));
-$phoneNumber = trim(filter_input(INPUT_POST, 'phoneNumber', FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_NO_ENCODE_QUOTES));
+$email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL));
+$phoneNumber = trim(filter_input(INPUT_POST, 'phoneNumber', FILTER_SANITIZE_NUMBER_INT));
 $city = trim(filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
 $state = trim(filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
-$zip = trim(filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_NO_ENCODE_QUOTES));
+$zip = trim(filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_NUMBER_INT));
 $text = trim(filter_input(INPUT_POST, 'text', FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES));
-$cgc = trim(filter_input(INPUT_POST, 'cgc', FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_NO_ENCODE_QUOTES));
+$cgc = trim(filter_input(INPUT_POST, 'cgc', FILTER_SANITIZE_NUMBER_INT));
 $vars = ['lastname'=>$lastname,'firstname'=>$firstname,'email'=>$email,'phoneNumber'=>$phoneNumber,'city'=>$city,'state'=>$state,'zip'=>$zip,'text'=>$text,'cgc'=>$cgc];
 $requiredVars = ['lastname'=>$lastname,'firstname'=>$firstname,'email'=>$email,'text'=>$text,'cgc'=>$cgc];
 define('regAlpha','[a-zA-Zéèçàùâêîûüëï ,\'"]*');
@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Length Check:
 
     // End Length Check
+    $retour = mail('vmancheron@yahoo.fr', 'Envoi depuis la page Contact', $_POST['text'], 'From :'.$_POST['email']);
 }
 // End Checking
 ?>
@@ -92,14 +93,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-row">
                     <div class="form-group col-md-6 mx-3 mx-md-0">
                         <label for="lastname">Nom</label>
-                        <input 'required' type="text" class="form-control" id="lastname" name="lastname"
+                        <input required type="text" class="form-control" id="lastname" name="lastname"
                             pattern="<?=regAlpha?>" title="N'utilisez que des lettres." minlength="2" maxlength="50" value="<?= $lastname ?? '' ?>"
                             placeholder="Mancheron">
                         <div class="error"><?= $error['empty']['lastname'] ?? '' ?></div>
                     </div>
                     <div class="form-group col-md-6 mx-3 mx-md-0">
                         <label for="firstname">Prénom</label>
-                        <input 'required' type="text" class="form-control" id="firstname" name="firstname"
+                        <input required type="text" class="form-control" id="firstname" name="firstname"
                             pattern="<?=regAlpha?>" title="N'utilisez que des lettres." minlength="2" maxlength="50" value="<?= $firstname ?? '' ?>"
                             placeholder="Vincent">
                         <div class="error"><?= $error['empty']['firstname'] ?? '' ?></div>
@@ -108,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-row">
                     <div class="form-group col-md-6 mx-3 mx-md-0">
                         <label for="email">Email</label>
-                        <input 'required' type="email" class="form-control" id="email" name="email"
+                        <input required type="email" class="form-control" id="email" name="email"
                             value="<?= $email ?? '' ?>" placeholder="vmancheron@yahoo.fr">
                         <div class="error"><?= $error['empty']['email'] ?? '' ?></div>
                     </div>
@@ -144,17 +145,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-row">
                     <div class="form-group col-11 mx-auto mx-md-0">
                         <label for="text">Votre message</label>
-                        <textarea 'required' class="form-control" id="text" name="text"
+                        <textarea required class="form-control" id="text" name="text"
                             value="<?= $message ?? '' ?>"></textarea>
                         <div class="error"><?= $error['empty']['message'] ?? '' ?></div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-check ml-3 ml-md-0">
-                        <input 'required' class="form-check-input" type="checkbox" id="cgc" name="cgc"
+                        <input required class="form-check-input" type="checkbox" id="cgc" name="cgc"
                             value="1">
                         <label class="form-check-label" for="cgc">
-                            Je suis en accord avec les <a href=>CGC</a>.
+                            <p>Je suis en accord avec les <a href=>CGC</a>.</p>
                         </label>
                         <div class="error"><?= $error['empty']['cgc'] ?? '' ?></div>
                     </div>
