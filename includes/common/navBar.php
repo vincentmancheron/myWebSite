@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active mx-3">
-                <a class="nav-link blocked" href="">Offres</a>
+                <a class="nav-link blocked d-none" href="">Offres</a>
             </li>
             <li class="nav-item active mx-3">
                 <a class="nav-link" href="/index.php#portfolios">Portfolios</a>
@@ -21,13 +21,13 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item active mx-3">
-                <a class="nav-link blocked" href="">Veille</a>
+                <a class="nav-link blocked d-none" href="">Veille</a>
             </li>
             <li class="nav-item active mx-3">
-                <a class="nav-link blocked" href="">eSport</a>
+                <a class="nav-link blocked d-none" href="">eSport</a>
             </li>
             <li class="nav-item active mx-3">
-                <a class="nav-link blocked" href="">Blog</a>
+                <a class="nav-link blocked d-none" href="">Blog</a>
             </li>
         </ul>
     </div>
@@ -39,10 +39,10 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/assets/ress/CV_Vincent_Mancheron.odt" download>CV Papier</a>
-                <a class="dropdown-item disabled" href="">Lettre de motivation</a>
+                <a class="dropdown-item disabled d-none" href="">Lettre de motivation</a>
             </div>
         </div>
-        <div id="language" class="blocked dropdown nav-item mx-lg-2 my-lg-0 py-2">
+        <div id="language" class="blocked dropdown nav-item mx-lg-2 my-lg-0 py-2 d-none">
             <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img id="flag" class="py-2" src="/assets/img/en.png" alt="English version">

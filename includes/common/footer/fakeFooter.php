@@ -1,5 +1,5 @@
 <div id="footer" class="col d-flex justify-content-around">
-    <ul class="blocked">
+    <ul class="blocked d-none">
         <h5>Mentions légales</h5>
         <li>
             <a href="">Mentions légales</a>
@@ -20,13 +20,13 @@
             <a href="/pages/cv.php">Mon CV</a>
         </li>
         <li>
-            <a class="blocked" href="">Veille</a>
+            <a class="blocked d-none" href="">Veille</a>
         </li>
         <li>
-            <a class="blocked" href="">eSport</a>
+            <a class="blocked d-none" href="">eSport</a>
         </li>
         <li>
-            <a class="blocked" href="">Blog</a>
+            <a class="blocked d-none" href="">Blog</a>
         </li>
     </ul>
     <ul class="d-none d-md-block">
@@ -35,7 +35,7 @@
             <a href="/index.php#aPropos">A propos</a>
         </li>
         <li>
-            <a class="blocked" href="">Offres</a>
+            <a class="blocked d-none" href="">Offres</a>
         </li>
         <li>
             <a href="/index.php#portfolios">Portfolios</a>

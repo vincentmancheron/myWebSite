@@ -9,6 +9,11 @@
 
 <!-- Figma: https://www.figma.com/file/uOyWpKxmXG1hKp6cLzTKMj/CV-num%C3%A9rique?node-id=0%3A1 -->
 
+<!-- Fichier d-none Master:
+-NavBar.
+-FakeFooter.
+-Redirect. -->
+
 <!-- A faire:
 -Refaire tous les commentaires de structuration avec un de début et un de fin.
 -Light/DarkMode.
