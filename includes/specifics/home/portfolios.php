@@ -7,7 +7,7 @@
         <h4 class="ml-5 mt-4">Mon projet principal: shop.ATH</h4>
         <div class="row justify-content-around my-3">
             <figure class="col-12 col-sm-3 col-lg-2">
-                <a id="p1" class="blocked" href="" target="_blank">
+                <a id="p1" href="https://trello.com/b/hZcTgw7f/ath-boutique-en-ligne" target="_blank">
                     <img class="img-fluid" src="/assets/img/trello.png" alt="Trello shop.ATH">
                 </a>
                 <figcaption>Le Trello</figcaption>
@@ -19,7 +19,7 @@
                 <figcaption>La Maquette</figcaption>
             </figure>
             <figure class="col-12 col-sm-3 col-lg-2">
-                <a id="p3" href="" target="_blank">
+                <a id="p3" class="blocked" href="" target="_blank">
                     <img class="img-fluid" src="/assets/img/logoath_c.jpg" alt="Site shop.ATH">
                 </a>
                 <figcaption>Le Site</figcaption>
@@ -66,7 +66,7 @@
                     <figcaption>2ème projet: Little Italy</figcaption>
                 </figure>
                 <figure class="col-12 col-sm-3 col-lg-2">
-                    <a id="p8" href="https://cedricgallet.github.io/Quattro_Stagioni/" target="_blank">
+                    <a id="p8" href="https://cedricgallet.github.io/Vitrine_Quattro_Stagioni/" target="_blank">
                         <img class="img-fluid" src="/assets/img/resto_Quattro_Stagioni2.png" alt="Quattro Stagioni">
                     </a>
                     <figcaption>3ème projet: Quattro Stagioni</figcaption>
