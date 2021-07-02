@@ -26,7 +26,7 @@
                     <li class="row itemSkill">
                         <div class="d-flex col-3 col-lg-3"></div>
                         <div class="progress col-7 col-lg-8">
-                            <div class="progress-bar bg-js" role="progressbar" style="width: 20%" aria-valuenow="20"
+                            <div class="progress-bar bg-js" role="progressbar" style="width: 30%" aria-valuenow="30"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                     <li class="row itemSkill">
                         <div class="d-flex col-3 col-lg-3"></div>
                         <div class="progress col-7 col-lg-8">
-                            <div class="progress-bar bg-php" role="progressbar" style="width: 0%" aria-valuenow="0"
+                            <div class="progress-bar bg-php" role="progressbar" style="width: 20%" aria-valuenow="20"
                                 aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>

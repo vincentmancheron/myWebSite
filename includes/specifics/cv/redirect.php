@@ -3,7 +3,7 @@
     <div class="col">
         <div class="row">
             <div class="col-4 d-flex justify-content-center">
-                <a href="/index.php#offers">
+                <a class="blocked" href="/index.php#offers">
                     <button class="btn btn-lg btn-success">Offres</button>
                 </a>
             </div>

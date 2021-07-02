@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
 
-            <form id="contactForm" class="col-12 col-md-5" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>"
+            <form id="contactForm" class="blocked col-12 col-md-5" action="mail.php"
                 method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6 mx-3 mx-md-0">
@@ -161,6 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary ml-3 ml-md-0">Soumettre</button>
+                <p><?php (isset($retour) && $retour)?'Votre message à bien été envoyé.':'Votre message n\'a pas pu être envoyé.' ?></p>
             </form>
         </div>
     </div>

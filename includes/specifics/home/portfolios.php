@@ -18,7 +18,7 @@
                 </a>
                 <figcaption>La Maquette</figcaption>
             </figure>
-            <figure class="col-12 col-sm-3 col-lg-2">
+            <figure class="col-12 col-sm-3 col-lg-2 blocked">
                 <a id="p3" class="blocked" href="" target="_blank">
                     <img class="img-fluid" src="/assets/img/logoath_c.jpg" alt="Site shop.ATH">
                 </a>

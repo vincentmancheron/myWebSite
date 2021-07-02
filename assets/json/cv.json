@@ -100,8 +100,8 @@
         "name": "JavaScript",
         "imgSrc": "/assets/img/js.png",
         "imgAlt": "Logo JS",
-        "value": "20",
-        "mention": "20%"
+        "value": "30",
+        "mention": "30%"
     },
     {
         "name": "Python",
@@ -114,8 +114,8 @@
         "name": "pHp",
         "imgSrc": "/assets/img/php.png",
         "imgAlt": "Logo pHp",
-        "value": "0",
-        "mention": "0%"
+        "value": "20",
+        "mention": "20%"
     },
     {
         "name": "SQL",
