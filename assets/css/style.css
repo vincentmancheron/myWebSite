@@ -9,14 +9,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: larger;
-    background-image: url(../img/matrix.jpg);
     /* filter: saturate(150%); => Fait bugguer les modals ??... */
 }
 
 main {
     display: flex;
     flex-direction: column;
-    opacity: 90%;
+    /* opacity: 90%; */
 }
 
 #main2 {

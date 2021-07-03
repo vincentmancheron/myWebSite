@@ -33,49 +33,49 @@
 
     "trainings": [{
             "title": "Titre Pro: Développeur Web/Web Mobile (2021)",
-            "imgSrc": "../assets/img/logo_La_Manu.png",
+            "imgSrc": "/assets/img/logo_La_Manu.png",
             "imgAlt": "La Manu Amiens",
             "description": "Formation intensive de 6 mois j'apprends à développer des sites Web cotés Front et Back.",
             "link": "https://lamanu.fr/campus/amiens-formation-numerique/"
         },
         {
             "title": "License professionnelle Comptabilité/Paye (2019-2020)",
-            "imgSrc": "../assets/img/cnam.png",
+            "imgSrc": "/assets/img/cnam.png",
             "imgAlt": "CNAM Picardie",
             "description": "non validée. Alternance au sein du service administratif de la Clinique de l’Europe.",
             "link": "https://www.cnam-hauts-de-france.fr/"
         },
         {
             "title": "BTS Management des unités commerciales (2016-2018)",
-            "imgSrc": "../assets/img/sacre_coeur.jpg",
+            "imgSrc": "/assets/img/sacre_coeur.jpg",
             "imgAlt": "Lycée du Sacré-Coeur",
             "description": "au Lycée du Sacré-Cœur d’Amiens.",
             "link": "https://site.sacrecoeur-amiens.org/"
         },
         {
             "title": "Essai d’intégration de l’armée de terre et de l’armée de l’air (2015-2016)",
-            "imgSrc": "../assets/img/Logo_of_the_French_Armed_Forces.svg",
+            "imgSrc": "/assets/img/Logo_of_the_French_Armed_Forces.svg",
             "imgAlt": "Ministère de la défense",
             "description": "Essai d’intégration de l’armée de terre et de l’armée de l’air.",
             "link": "https://www.defense.gouv.fr/"
         },
         {
             "title": "1ère année cycle préparatoire intégrée (2014-2015)",
-            "imgSrc": "../assets/img/escom.svg",
+            "imgSrc": "/assets/img/escom.svg",
             "imgAlt": "Classes préparatoires ESCOM",
             "description": "ESCOM, école supérieure de chimie organique et minérale.",
             "link": "https://www.escom.fr/"
         },
         {
             "title": "PCSI Sup (2013-2014)",
-            "imgSrc": "../assets/img/Chartreux.jpg",
+            "imgSrc": "/assets/img/Chartreux.jpg",
             "imgAlt": "Classes préparatoires CPE",
             "description": "au lycée des chartreux Lyon (Intégration CPE Lyon). Membre du BDE de l’école.",
             "link": "https://www.prepa.cpe.fr/"
         },
         {
             "title": "Seconde-Terminale S (2010-2013)",
-            "imgSrc": "../assets/img/sacre_coeur.jpg",
+            "imgSrc": "/assets/img/sacre_coeur.jpg",
             "imgAlt": "Lycée du Sacré-Coeur",
             "description": "au Lycée du Sacré-Cœur Amiens. Spécialité Mathématiques. BAC obtenu avec mention BIEN.",
             "link": "https://site.sacrecoeur-amiens.org/"

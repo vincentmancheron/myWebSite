@@ -1,5 +1,5 @@
 <!-- Head -->
-<?php include('../includes/common/head.php') ?>
+<?php include(dirname(__FILE__).'/../templates/head.html') ?>
     <link rel="stylesheet" href="/assets/css/cv.css">
     <link rel="stylesheet" href="/assets/css/timelines.css">
     <title>CV - Vincent Mancheron - Développeur Web Junior</title>
@@ -15,40 +15,40 @@
 
     <main class="row">
         <!-- NavBar -->
-        <?php include('../includes/common/navBar.php') ?>
+        <?php include(dirname(__FILE__).'/../templates/navBar.html') ?>
         <!-- Fin NavBar -->
 
         <!-- Corps de page -->
         <div id="main2" class="col">
             <!-- Expériences -->
-            <?php include('../includes/specifics/cv/exp.php'); ?>
+            <?php include(dirname(__FILE__).'/exp.html'); ?>
             <!-- Fin Expériences -->
 
             <!-- Formations -->
-            <?php include('../includes/specifics/cv/train.php'); ?>
+            <?php include(dirname(__FILE__).'/train.html'); ?>
             <!-- Fin Formations -->
 
             <!-- Compétences -->
-            <?php include('../includes/specifics/cv/skills.php'); ?>
+            <?php include(dirname(__FILE__).'/skills.html'); ?>
             <!-- Fin Compétences -->
 
             <!-- Loisirs -->
-            <?php include('../includes/specifics/cv/hobbies.php'); ?>
+            <?php include(dirname(__FILE__).'/hobbies.html'); ?>
             <!-- Fin Loisirs -->
 
             <!-- Redirection -->
-            <?php include('../includes/specifics/cv/redirect.php'); ?>
+            <?php include(dirname(__FILE__).'/redirect.html'); ?>
             <!-- Fin Redirection -->
         </div>
         <!-- Fin Corps de page -->
 
     <!-- Footer -->
-    <?php include('../includes/common/footer/main.php') ?>
+    <?php include(dirname(__FILE__).'/../templates/footer/main.php') ?>
     <!-- Fin Footer -->
 
     <!-- Script JS -->
     <script src="/assets/js/cv.js"></script>
-    <?php include('../includes/common/script.php') ?>
+    <?php include(dirname(__FILE__).'/../templates/script.html') ?>
     <!-- Fin Script JS -->
 </body>
 
