@@ -9,10 +9,10 @@
                     <p class="border col-8 col-md-8 col-lg-6">
                         <a href="tel:+3323232425">Tel:<br>
                             07.88.22.87.29<br><br>
-                            <a href="mailto:vmancheron@yahoo.fr">Mail:<br>
-                                vmancheron@yahoo.fr</a><br><br>
-                            <a href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">Ville:<br>
-                                Amiens, France</a>
+                        <a href="mailto:vmancheron@yahoo.fr">Mail:<br>
+                            vmancheron@yahoo.fr</a><br><br>
+                        <a href="https://goo.gl/maps/GvfHcFbvjrcBQaz59" target="_blank">Ville:<br>
+                            Amiens, France</a>
                     </p>
                 </div>
                 <div class="row justify-content-center mt-5 mb-0">
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <form id="contactForm" class="blocked col-12 col-md-6" action="mail.php"
+            <form id="contactForm" class="col-12 col-md-6" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>"
                 method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6 mx-3 mx-md-0">
