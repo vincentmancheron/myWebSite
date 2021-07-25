@@ -28,6 +28,9 @@
     figure img {
         width: 30vh;
     }
+    /* #manu img {
+        width: 50%;
+    } */
 }
 /* Fin sm< */
 
@@ -47,6 +50,10 @@
     #manu a {
         padding: 0 1em 0 0;
     }
+    /* #manu img {
+        max-width: 100%;
+        height: auto;
+    } */
     #manu p {
         padding: 0 0 0 1em;
     }
