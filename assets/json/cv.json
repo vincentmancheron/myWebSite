@@ -160,6 +160,41 @@
         "mention": "Bonne maîtrise"
     },
     {
+        "name": "Boostrap",
+        "imgSrc": "/assets/img/boostrap.png",
+        "imgAlt": "Logo Boostrap",
+        "value": "60",
+        "mention": "Bonne maîtrise"
+    },
+    {
+        "name": "TailWind",
+        "imgSrc": "/assets/img/tailwind.png",
+        "imgAlt": "Logo Tailwind",
+        "value": "0",
+        "mention": "Non débuté"
+    },
+    {
+        "name": "Symfony",
+        "imgSrc": "/assets/img/symfony.png",
+        "imgAlt": "Logo Symfony",
+        "value": "0",
+        "mention": "Non débuté"
+    },
+    {
+        "name": "Wordpress",
+        "imgSrc": "/assets/img/wordpress.png",
+        "imgAlt": "Logo Wordpress",
+        "value": "25",
+        "mention": "En progression"
+    },
+    {
+        "name": "Shopify",
+        "imgSrc": "/assets/img/shopify.png",
+        "imgAlt": "Logo Shopify",
+        "value": "0",
+        "mention": "Non débuté"
+    },
+    {
         "name": "Web",
         "imgSrc": "/assets/img/html5.png",
         "imgAlt": "Logo HTML5",

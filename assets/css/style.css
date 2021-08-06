@@ -9,6 +9,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: larger;
+    width: 98vw;
     /* filter: saturate(150%); => Fait bugguer les modals ??... */
 }
 
@@ -51,22 +52,6 @@ figure {
 
 figure img {
     border-radius: 2em;
-}
-
-.w-5 {
-    width: 5%;
-}
-
-.w-12 {
-    width: 12%;
-}
-
-.w-55 {
-    width: 55%;
-}
-
-.h-10 {
-    height: 10%;
 }
 
 /* ---Fin Généralités--- */
@@ -154,7 +139,7 @@ nav {
 
 /* Fin Header */
 /* A propos */
-#aPropos ul {
+#about ul {
     list-style: none;
 }
 

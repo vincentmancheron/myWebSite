@@ -12,8 +12,9 @@ block(document.querySelectorAll('.blocked'));
 // Fin Bouton langue
 
 // Color Mode:
+const btnColorMod = document.querySelector('#colorMod');
 const body = document.querySelector('body');
-const headerHome = document.querySelector ('header');
+const headerHome = document.querySelector('header');
 const main = document.querySelector('main');
 const section = document.querySelectorAll('section');
 const fauxFooter = document.querySelector('#footer');
@@ -22,9 +23,12 @@ const footer = document.querySelector('footer');
 const colorMod = () => {
     var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
     if (lSColorMod) {
+        btnColorMod.innerHTML = 'Dark Mode'
         body.style.color = "black";
         // body.borderColor = "black";
-        headerHome.style.backgroundColor = 'white';
+        if (window.location.search == '') {
+            headerHome.style.backgroundColor = 'white';
+        }
         main.style.backgroundColor = 'grey';
         section.forEach(element => {
             element.style.backgroundImage = 'none';
@@ -36,9 +40,12 @@ const colorMod = () => {
         fauxFooter.querySelectorAll('a').forEach(element => element.style.color = "black");
         footer.style.backgroundColor= 'white';
     } else {
+        btnColorMod.innerHTML = 'Light Mode'
         body.style.color = "whitesmoke";
         // body.borderColor = "white";
-        headerHome.style.backgroundColor = 'black';
+        if (window.location.search == '') {
+            headerHome.style.backgroundColor = 'black';
+        }
         main.style.backgroundColor = 'black';
         section.forEach(element => {
             element.style.backgroundImage = 'url(/assets/img/oldBlack.jpg)';

@@ -47,3 +47,6 @@ Bugs:
 -Mes a n'ont pas tous les text-decoration:none
 -Non selection de base sur la liste des pays dans le formulaire.
 -Carousel
+
+-Sur l'inspecteur defilement horizontal large.
+-lightmode et text généré via le json sur exp et trainings;

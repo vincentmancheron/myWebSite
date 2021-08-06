@@ -10,4 +10,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/media.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image" href="/assets/img/vm.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <?= $additionnalLink ?? '' ?>
+</head>
+
+<body class="container-fluid">

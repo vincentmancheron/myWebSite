@@ -53,6 +53,14 @@
                     <!-- 5eme projet, 1er Wordpress -->
                 </figure>
             </div>
+            <div class="row justify-content-around my-3">
+                <figure class="col-12 col-sm-3 col-lg-2 blocked">
+                    <a id="p9" target="_blank">
+                        <img class="img-fluid" src="/assets/img/futureImperfect.png" alt="sneakers.Shop">
+                    </a>
+                    <figcaption>Imperfect Future</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -76,6 +84,14 @@
                         <img class="img-fluid" src="/assets/img/sneakersShop.jpg" alt="sneakers.Shop">
                     </a>
                     <figcaption>4ème projet: sneakers.Shop</figcaption>
+                </figure>
+            </div>
+            <div class="row justify-content-around my-3">
+                <figure class="col-12 col-sm-3 col-lg-2 blocked">
+                    <a id="p9" target="_blank">
+                        <img class="img-fluid" src="/assets/img/logoOcordo.png" alt="sneakers.Shop">
+                    </a>
+                    <figcaption>5ème projet: Maçonnerie Occordo</figcaption>
                 </figure>
             </div>
         </div>

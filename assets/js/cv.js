@@ -46,7 +46,6 @@ const cloneTrain = () => {
     return clone;
 }
 
-
 const expMainTimeline = document.querySelector('#exp .main-timeline');
 const trainMainTimeline = document.querySelector('#trainings .main-timeline');
 const idProgress = document.querySelectorAll('#skills .itemSkill>div:first-child');
