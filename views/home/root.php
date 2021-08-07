@@ -10,7 +10,7 @@
 <!-- Fin Portfolios -->
 
 <!-- Contact -->
-<?php include(dirname(__FILE__).'/contact.php') ?>
+<?php include(dirname(__FILE__).'/contact/contact.php') ?>
 <!-- Fin Contact -->
 
 <!-- Carousel -->
