@@ -30,6 +30,14 @@
     width: 25%;
 }
 
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
 #trainings .main-timeline .timeline-content{
     color: initial;
 }

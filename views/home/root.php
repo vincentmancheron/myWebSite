@@ -12,6 +12,3 @@
 <!-- Contact -->
 <?php include(dirname(__FILE__).'/contact/contact.php') ?>
 <!-- Fin Contact -->
-
-<!-- Carousel -->
-<!-- Fin Carousel -->

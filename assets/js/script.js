@@ -15,6 +15,9 @@ block(document.querySelectorAll('.blocked'));
 const btnColorMod = document.querySelector('#colorMod');
 const body = document.querySelector('body');
 const headerHome = document.querySelector('header');
+const logo = document.querySelector('#logo');
+const nav = document.querySelector('#nav');
+const logo2 = document.querySelector('#logo2');
 const main = document.querySelector('main');
 const section = document.querySelectorAll('section');
 const fauxFooter = document.querySelector('#footer');
@@ -23,12 +26,17 @@ const footer = document.querySelector('footer');
 const colorMod = () => {
     var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
     if (lSColorMod) {
+        // Light Mode:
         btnColorMod.innerHTML = 'Dark Mode'
         body.style.color = "black";
         // body.borderColor = "black";
         if (window.location.search == '') {
             headerHome.style.backgroundColor = 'white';
+            logo.setAttribute("src", "/assets/img/blackLogo.png");
         }
+        nav.classList.remove('navbar-light','bg-light');
+        nav.classList.add('navbar-dark','bg-dark');
+        logo2.setAttribute("src", "/assets/img/whiteLogoNavBar.png");
         main.style.backgroundColor = 'grey';
         section.forEach(element => {
             element.style.backgroundImage = 'none';
@@ -38,14 +46,19 @@ const colorMod = () => {
             element.style.borderWidth = "2px";
         })
         fauxFooter.querySelectorAll('a').forEach(element => element.style.color = "black");
-        footer.style.backgroundColor= 'white';
+        footer.style.backgroundColor= 'grey';
     } else {
+        // Dark Mode:
         btnColorMod.innerHTML = 'Light Mode'
         body.style.color = "whitesmoke";
         // body.borderColor = "white";
         if (window.location.search == '') {
             headerHome.style.backgroundColor = 'black';
+            logo.setAttribute("src", "/assets/img/whiteLogo.png");
         }
+        nav.classList.remove('navbar-dark','bg-dark');
+        nav.classList.add('navbar-light','bg-light');
+        logo2.setAttribute("src", "/assets/img/blackLogoNavBar.png");
         main.style.backgroundColor = 'black';
         section.forEach(element => {
             element.style.backgroundImage = 'url(/assets/img/oldBlack.jpg)';

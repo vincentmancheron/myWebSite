@@ -5,9 +5,8 @@ if (!isset($_GET['nav'])) {
     $metaDesc = "Site Web de Vincent Mancheron, Développeur Web Junior en Formation à La Manu Amiens. Vous y retrouverez ses Offres, son Portfolio, son CV ainsi que son Blog.";
     $header = '/views/home/header.html';
     $currentPage = '/views/home/root.php';
-    $additionnalScript =
-    '<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/assets/js/sendEmail.js"></script>';
+    $additionnalScript = '<script type="text/javascript" src="/assets/js/sendEmail.js"></script>';
+    // <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 } else {
     switch ($_GET['nav']) {
         case 'cv':

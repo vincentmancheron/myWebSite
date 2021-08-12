@@ -1,4 +1,4 @@
-            <form id="contactForm" class="col-12 col-md-6 pr-5" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>"
+            <form id="contactForm" class="blocked col-12 col-md-6 pr-5" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>"
                 method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6 mx-3 mx-md-0">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-12 mx-auto mx-md-0">
+                    <div class="form-group col-md-12 mx-3 mx-md-0">
                         <label for="subject">Sujet:</label>
                         <input type="text" class="form-control" id="subject" name="subject" pattern="<?=REGALPHA?>"
                             title="N'utilisez que des lettres, des espaces et des guillemets/apostrophes." minlength="3"
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-12 mx-auto mx-md-0 mb-0">
+                    <div class="form-group col-md-12 mx-3 mx-md-0 mb-0">
                         <label for="body">Votre message:*</label>
                         <textarea required class="form-control" id="body" name="body" minlength="25" maxlength="1500"
                             value="<?= $message ?? '' ?>"></textarea>

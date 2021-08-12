@@ -31,6 +31,8 @@ const cloneExp = () => {
 }
 
 const cloneTrain = () => {
+    var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
+    var blackOrWhite = (lSColorMod)?'black':'white';
     let clone = 
     `<div class="timeline">
         <a class="timeline-content" target="_blank">
@@ -38,7 +40,7 @@ const cloneTrain = () => {
                 <i class="fa fa-globe"></i>
             </div>
             <h3 class="title"></h3>
-            <p class="description d-flex">
+            <p class="description d-flex ${blackOrWhite}">
                 <img class="mx-3">
             </p>
         </a>
