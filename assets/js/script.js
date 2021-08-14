@@ -84,5 +84,11 @@ const changeColorMod = () => {
 
 colorMod();
 
-document.getElementById('colorMod').onclick = () => changeColorMod();
+document.getElementById('colorMod').onclick = () => {
+    changeColorMod();
+    // On recharge la page si on est sur le CV car le color mod ne fonctionne pas directement sur les textes chargés en json.
+    if (window.location.search == '?nav=cv') {
+        window.location.reload();
+    }
+}
 // Fin Color Mode

@@ -27,7 +27,7 @@
         {
             "title": "Bénévolat",
             "text": "2 mois d’aide au sein d’une association pour personnes atteintes d’handicap mental.<br>1 mois de bénévolat en tant que technicien dans une association de voile.",
-            "missions": ""
+            "missions": "<li>Encadrement des personnes handicapés.</li><li>Entretien, réparation et rangement des bateaux après la saison estivale.</li>"
         }
     ],
 
@@ -42,42 +42,42 @@
             "title": "License professionnelle Comptabilité/Paye (2019-2020)",
             "imgSrc": "/assets/img/cnam.png",
             "imgAlt": "CNAM Picardie",
-            "description": "non validée. Alternance au sein du service administratif de la Clinique de l’Europe.",
+            "description": "Alternance au sein du service administratif de la Clinique de l’Europe. J'y ai appris les bases de la comptabilité comme le fait de savoir tenir un registre. Non validée.",
             "link": "https://www.cnam-hauts-de-france.fr/"
         },
         {
             "title": "BTS Management des unités commerciales (2016-2018)",
             "imgSrc": "/assets/img/sacre_coeur.jpg",
             "imgAlt": "Lycée du Sacré-Coeur",
-            "description": "au Lycée du Sacré-Cœur d’Amiens.",
+            "description": "au Lycée du Sacré-Cœur d’Amiens. J'ai appris les bases de gestion d'une équipe et d'une enseigne commerciale ainsi que celles du Marketing.",
             "link": "https://site.sacrecoeur-amiens.org/"
         },
         {
-            "title": "Essai d’intégration de l’armée de terre et de l’armée de l’air (2015-2016)",
+            "title": "Essais d’intégration des armées françaises (2015-2016)",
             "imgSrc": "/assets/img/Logo_of_the_French_Armed_Forces.svg",
             "imgAlt": "Ministère de la défense",
-            "description": "Essai d’intégration de l’armée de terre et de l’armée de l’air.",
+            "description": "Tentatives d’intégrations comme sous-officier dans l’armée de terre (personnel de combat) et dans l’armée de l’air (commando parachutiste).",
             "link": "https://www.defense.gouv.fr/"
         },
         {
             "title": "1ère année cycle préparatoire intégrée (2014-2015)",
             "imgSrc": "/assets/img/escom.svg",
             "imgAlt": "Classes préparatoires ESCOM",
-            "description": "ESCOM, école supérieure de chimie organique et minérale.",
+            "description": "ESCOM, école supérieure de chimie organique et minérale. Comme l'année précédente, ce fut la première année dans le cursus d'un ingénieur chimiste.",
             "link": "https://www.escom.fr/"
         },
         {
             "title": "PCSI Sup (2013-2014)",
             "imgSrc": "/assets/img/Chartreux.jpg",
             "imgAlt": "Classes préparatoires CPE",
-            "description": "au lycée des chartreux Lyon (Intégration CPE Lyon). Membre du BDE de l’école.",
+            "description": "au lycée des chartreux Lyon pour une intégration CPE Lyon dans le but de devenir ingénieur chimiste. Membre d'une des listes candidates au BDE du cycle préparatoire.",
             "link": "https://www.prepa.cpe.fr/"
         },
         {
             "title": "Seconde-Terminale S (2010-2013)",
             "imgSrc": "/assets/img/sacre_coeur.jpg",
             "imgAlt": "Lycée du Sacré-Coeur",
-            "description": "au Lycée du Sacré-Cœur Amiens. Spécialité Mathématiques. BAC obtenu avec mention BIEN.",
+            "description": "au Lycée du Sacré-Cœur Amiens. Spécialité Mathématiques. BAC obtenu avec la mention BIEN.",
             "link": "https://site.sacrecoeur-amiens.org/"
         }
     ],
@@ -86,22 +86,22 @@
         "name": "HTML5",
         "imgSrc": "/assets/img/html5.png",
         "imgAlt": "Logo HTML5",
-        "value": "50",
-        "mention": "50%"
+        "value": "70",
+        "mention": "70%"
     },
     {
         "name": "CSS3",
         "imgSrc": "/assets/img/css3.png",
         "imgAlt": "Logo CSS3",
-        "value": "30",
-        "mention": "30%"
+        "value": "40",
+        "mention": "40%"
     },
     {
         "name": "JavaScript",
         "imgSrc": "/assets/img/js.png",
         "imgAlt": "Logo JS",
-        "value": "30",
-        "mention": "30%"
+        "value": "50",
+        "mention": "50%"
     },
     {
         "name": "Python",
@@ -114,28 +114,28 @@
         "name": "pHp",
         "imgSrc": "/assets/img/php.png",
         "imgAlt": "Logo pHp",
-        "value": "20",
-        "mention": "20%"
+        "value": "40",
+        "mention": "40%"
     },
     {
         "name": "SQL",
         "imgSrc": "/assets/img/sql.png",
         "imgAlt": "Logo SQL",
-        "value": "0",
-        "mention": "0%"
+        "value": "80",
+        "mention": "80%"
     },
     {
         "name": "Figma",
         "imgSrc": "/assets/img/figma.png",
         "imgAlt": "Logo Figma",
-        "value": "25",
+        "value": "60",
         "mention": "En progression"
     },
     {
         "name": "Gimp",
         "imgSrc": "/assets/img/gimp.png",
         "imgAlt": "Logo Gimp",
-        "value": "10",
+        "value": "20",
         "mention": "Débutant"
     },
     {
@@ -163,7 +163,7 @@
         "name": "Boostrap",
         "imgSrc": "/assets/img/boostrap.png",
         "imgAlt": "Logo Boostrap",
-        "value": "60",
+        "value": "80",
         "mention": "Bonne maîtrise"
     },
     {
@@ -184,7 +184,7 @@
         "name": "Wordpress",
         "imgSrc": "/assets/img/wordpress.png",
         "imgAlt": "Logo Wordpress",
-        "value": "25",
+        "value": "40",
         "mention": "En progression"
     },
     {
