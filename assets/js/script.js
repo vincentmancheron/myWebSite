@@ -27,7 +27,9 @@ const colorMod = () => {
     var lSColorMod = JSON.parse(localStorage.getItem('colorMod'));
     if (lSColorMod) {
         // Light Mode:
-        btnColorMod.innerHTML = 'Dark Mode'
+        btnColorMod.innerHTML = 'Dark Mode';
+        btnColorMod.classList.remove('btn-dark');
+        btnColorMod.classList.add('btn-light');
         body.style.color = "black";
         // body.borderColor = "black";
         if (window.location.search == '') {
@@ -50,6 +52,8 @@ const colorMod = () => {
     } else {
         // Dark Mode:
         btnColorMod.innerHTML = 'Light Mode'
+        btnColorMod.classList.remove('btn-light');
+        btnColorMod.classList.add('btn-dark');
         body.style.color = "whitesmoke";
         // body.borderColor = "white";
         if (window.location.search == '') {

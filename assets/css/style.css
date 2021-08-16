@@ -79,6 +79,10 @@ nav {
     width: 2em;
 }
 
+#nav .btn {
+    font-size: 0.9em;
+}
+
 .stickyBot {
     bottom: 0;
     position: sticky;

@@ -42,3 +42,4 @@ Bugs:
 -lightmode et text généré via le json trainings: besoin de recharger la page;
 -Rajouter NodeJs aux skills.
 -Passer au W3C et corriger les erreurs.
+-L'image dans le about est pas responsive en md. (se referer au portfolio pour la modif).

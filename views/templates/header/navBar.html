@@ -19,8 +19,6 @@
                 <li class="nav-item active mx-3">
                     <a class="nav-link" href="/index.php#contact">Contact</a>
                 </li>
-            </ul>
-            <ul class="navbar-nav">
                 <li class="nav-item active mx-3">
                     <a class="nav-link" href="/index.php?nav=veille">Veille</a>
                 </li>
@@ -31,37 +29,37 @@
                     <a class="nav-link" href="/index.php?nav=blog">Blog</a>
                 </li>
             </ul>
-        </div>
-        <div class="collapse navbar-collapse justify-content-end pr-2 mr-5" id="navbarNav">
-            <div class="nav-item active dropdown mx-lg-2 my-lg-0 py-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownDownload"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Télécharger
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownDownload">
-                    <a class="dropdown-item" href="/assets/ress/cv_vincent_mancheron.pdf" target="on_blank">CV Papier</a>
-                    <a class="dropdown-item disabled">Lettre de motivation</a>
-                </div>
-            </div>
-            <div id="language" class="blocked dropdown nav-item mx-lg-2 my-lg-0 py-2">
-                <button id="buttonFlag" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLanguage"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img id="flag" class="py-2" src="/assets/img/en.png" alt="English version">
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
-                    <ul>
-                        <li>
-                            <img id="en" class="flagSelect py-2" src="/assets/img/en.png" alt="Version anglaise">
-                        </li>
-                        <li>
-                            <img id="fr" class="flagSelect py-2" src="/assets/img/fr.png" alt="Version française">
-                        </li>
-                    </ul>                
-                </div>
-            </div>
-            <div class="nav-item active mx-lg-2 my-lg-0 py-2">
-                <button class="btn btn-primary" id="colorMod"></button>
-            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item active dropdown mx-lg-2 my-lg-0 py-2">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownDownload"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ma documentation
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownDownload">
+                        <a class="dropdown-item" href="/assets/ress/cv_vincent_mancheron.pdf" target="on_blank">CV Papier</a>
+                        <a class="dropdown-item" href="/assets/ress/Lettre_Motivation_Vincent_Mancheron.pdf">Lettre de motivation</a>
+                    </div>
+                </li>
+                <li id="language" class="blocked dropdown nav-item mx-lg-2 my-lg-0 py-2">
+                    <button id="buttonFlag" class="btn btn-primary dropdown-toggle" type="button" id="dropdownLanguage"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img id="flag" class="py-2" src="/assets/img/en.png" alt="English version">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                        <ul>
+                            <li>
+                                <img id="en" class="flagSelect py-2" src="/assets/img/en.png" alt="Version anglaise">
+                            </li>
+                            <li>
+                                <img id="fr" class="flagSelect py-2" src="/assets/img/fr.png" alt="Version française">
+                            </li>
+                        </ul>                
+                    </div>
+                </li>
+                <li class="nav-item active mx-lg-2 my-lg-0 py-2">
+                    <button class="btn" id="colorMod"></button>
+                </li>    
+            </ul>
         </div>
     </nav>
 
